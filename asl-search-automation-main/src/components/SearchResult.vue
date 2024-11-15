@@ -4,17 +4,21 @@
       <img :src="imgSrc" alt="Sign Image" />
     </div>
     <div class="details">
+
+      <p><strong>Segment:</strong> {{ startTime }} <strong>-</strong> {{ endTime }}</p>
       <p><strong>Sign:</strong> {{ sign }}</p>
-      <p><strong>Confidence:</strong> {{ confidence.toFixed(2) }}</p>
+      <p>Confidence: {{ confidence }}</p>
       <p><strong>Hands:</strong> {{ hands }}</p>
       <p><strong>Handshape:</strong> {{ handshape }}</p>
       <p><strong>Location:</strong> {{ location }}</p>
       <p><strong>Movement:</strong> {{ movement }}</p>
     </div>
   </div>
+
 </template>
 
 <script>
+
 export default {
   name: 'SearchResult',
   props: {
@@ -25,6 +29,8 @@ export default {
     handshape: String,
     location: String,
     movement: String,
+    startTime:Number,
+    endTime: Number,
   },
 };
 </script>

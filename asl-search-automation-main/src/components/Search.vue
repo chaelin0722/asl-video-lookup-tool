@@ -1,13 +1,15 @@
 <template>
   <div id="search">
     <h3>Search Results</h3>
-    <p>This is a test.</p>
     <div id="results">
       <template v-if="preparedResults.length > 0">
         <search-result
           v-for="(result, index) in preparedResults"
           :key="`result-${index}`"
           :sign="result.sign"
+          :start-time="result.startTime"
+          :end-time="result.endTime"
+          :confidence="result.confidence"
           :img-src="result.imgSrc"
           :hands="result.hands"
           :handshape="result.handshape"
@@ -33,8 +35,12 @@ export default {
       type: Array,
       default: () => [],
     },
-    computed: {
+  },
+
+  computed: {
       preparedResults() {
+        //check
+        console.log("Processing signs:", this.signs);
         // Process predictions from `signs` and match them with `signs.json`
         return this.signs.flatMap((segment) =>
             segment[2].map((prediction) => {
@@ -43,8 +49,11 @@ export default {
               );
 
               return {
+
+                startTime: segment[0],
+                endTime: segment[1],
                 sign: prediction[0],
-                confidence: prediction[1],
+                confidence: prediction[1],  // confidence 값 확인
                 imgSrc: match ? match.img_src : '', // Default to empty string if no match
                 hands: match ? match.hands : 'Unknown',
                 handshape: match ? match.handshape : 'Unknown',
@@ -53,10 +62,13 @@ export default {
               };
             })
         );
+
       },
     },
+    mounted() {
   },
 };
+
 </script>
 
 <style lang="scss" scoped>

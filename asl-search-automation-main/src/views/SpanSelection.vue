@@ -56,7 +56,7 @@
         :selection="timelineSelection"
         :duration="duration"
         :currentStep="currentStep"
-        :signs="segments"
+        :signs="signs"
       />
     </div>
   </div>
@@ -188,14 +188,16 @@ export default {
         const response = await axios.post("http://localhost:3000/process-video", formData, {
           headers: {"Content-Type": "multipart/form-data"},
         });
-        //console.log("Server response:", response.data);
-        console.log("Segments updated successfully:", response.data);
+
         this.segments = response.data; // JSON 결과를 UI에 표시
         console.log("Updated segments:", this.segments);
 
         // Debug: Search.vue가 데이터를 받고 있는지 확인
-        const searchComponent = this.$refs.search;
-        console.log("Search component received signs:", searchComponent.signs);
+        //  const searchComponent = this.$refs.search;
+        // console.log("Search component received signs:", searchComponent.signs);
+
+        this.$refs.search.signs = this.segments; // Search 컴포넌트로 데이터 전달
+        console.log("deliver data to Search.vue", this.$refs.search.signs);
 
       } catch (error) {
         console.error("Error executing Python script:", error);
