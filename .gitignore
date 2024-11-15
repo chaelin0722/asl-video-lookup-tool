@@ -1,0 +1,31 @@
+k# folders
+ASL-citizen-code-main/
+assets2023-sign-language-dictionary-main/
+CHI-2025-SLD/
+I3D/
+output_sign/
+segmentation/
+spoter/
+spoter_mod/
+spoter-main/
+spoter-mediapipe-extraction-master/
+spoter-new-temp-updates/
+transcription-main/
+
+
+
+##
+*.zip
+*.pth
+*.csv
+*.mp4
+*.eaf
+*.mov
+*.json
+*.txt
+
+## allow
+!asl-search-automation-main/
+!sl-wrapper-main/
+
+
