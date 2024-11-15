@@ -11,7 +11,9 @@ spoter-main/
 spoter-mediapipe-extraction-master/
 spoter-new-temp-updates/
 transcription-main/
-
+.DS_Store
+.idea/
+dataset_shortcut
 
 
 ##
@@ -29,3 +31,4 @@ transcription-main/
 !sl-wrapper-main/
 
 
+.DS_Store
