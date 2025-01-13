@@ -1,28 +1,28 @@
-import re
-import os
 import json
-import datetime
-from statistics import mean, stdev
-from pprint import pprint
-import pandas as pd
+import os
 from argparse import ArgumentParser
 from pathlib import Path
+from statistics import mean, stdev
+
+import pandas as pd
 
 
 def find_value_from_line(lines, pattern, strict_start=False):
     return [
-        line.replace(pattern, '').replace(' ', '') 
-        for line in lines 
+        line.replace(pattern, '').replace(' ', '')
+        for line in lines
         if (not strict_start and (pattern in line.strip())) or (strict_start and line.strip().startswith(pattern))
     ][0]
+
 
 def flatten(l):
     return [item for sublist in l for item in sublist]
 
+
 parser = ArgumentParser()
 args = parser.parse_args()
 
-wandb_base_dir = '/data/zifjia/pose_to_segments_mediapi/wandb'
+wandb_base_dir = '/data/zifjia/sign_language_segmentation_mediapi/wandb'
 current_dir = os.path.dirname(os.path.realpath(__file__))
 csv_path = os.path.join(current_dir, 'summary_mediapi.csv')
 
@@ -54,8 +54,8 @@ for model_id, note in models:
         'training_time_avg': [],
     }
     for key in metrics:
-         stats[f'test_{key}'] = []
-         stats[f'dev_{key}'] = []
+        stats[f'test_{key}'] = []
+        stats[f'dev_{key}'] = []
 
     for seed in seeds:
         model_id_with_seed = f'{model_id}-{seed}'

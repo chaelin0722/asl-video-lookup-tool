@@ -5,15 +5,14 @@ from typing import Any, Dict, Iterable, List, Optional, Tuple, TypedDict
 import numpy as np
 import numpy.ma as ma
 import torch
+from .tfds_dataset import ProcessedPoseDatum, get_tfds_dataset
 from pose_format import Pose
 from pose_format.numpy.representation.distance import DistanceRepresentation
+from pose_format.utils.generic import normalize_hands_3d
 from pose_format.utils.optical_flow import OpticalFlowCalculator
 from sign_language_datasets.datasets.dgs_corpus.dgs_utils import get_elan_sentences
 from torch.utils.data import Dataset
 from tqdm import tqdm
-
-from _shared.pose_utils import normalize_hands_3d
-from _shared.tfds_dataset import ProcessedPoseDatum, get_tfds_dataset
 
 
 class Segment(TypedDict):

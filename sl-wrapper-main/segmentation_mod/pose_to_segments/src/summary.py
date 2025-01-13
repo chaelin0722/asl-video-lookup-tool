@@ -1,19 +1,22 @@
-import re
-import os
-import json
 import datetime
-from statistics import mean, stdev
-from pprint import pprint
-import pandas as pd
-from argparse import ArgumentParser
+import json
+import os
+import re
 import subprocess
+from argparse import ArgumentParser
+from pprint import pprint
+from statistics import mean, stdev
+
+import pandas as pd
 
 
 def find_value_from_line(lines, pattern):
     return [line.replace(pattern, '').replace(' ', '') for line in lines if (pattern in line)][0]
 
+
 def flatten(l):
     return [item for sublist in l for item in sublist]
+
 
 parser = ArgumentParser()
 parser.add_argument('--eval', action='store_true', help='re-evaluate?')
@@ -143,8 +146,11 @@ options = [
     '--dataset=dgs_corpus --pose=holistic --fps=25 --hidden_dim=256 --encoder_depth=4 --encoder_bidirectional=true --pose_components POSE_LANDMARKS LEFT_HAND_LANDMARKS RIGHT_HAND_LANDMARKS FACE_LANDMARKS --pose_reduce_face=true',
     '--dataset=dgs_corpus --pose=holistic --fps=25 --hidden_dim=256 --encoder_depth=4 --encoder_bidirectional=true --pose_components POSE_LANDMARKS LEFT_HAND_LANDMARKS RIGHT_HAND_LANDMARKS FACE_LANDMARKS',
 ]
-commands = [f'python -m pose_to_segments.src.train {option} --data_dir=/shares/volk.cl.uzh/zifjia/tensorflow_datasets_2 --test=true' for option in options]
-eval_commands = [f'{command} --train=false --checkpoint=./models/{model_name}/best.ckpt' for command, model_name in zip(commands, model_names)]
+commands = [
+    f'python -m sign_language_segmentation.src.train {option} --data_dir=/shares/volk.cl.uzh/zifjia/tensorflow_datasets_2 --test=true'
+    for option in options]
+eval_commands = [f'{command} --train=false --checkpoint=./models/{model_name}/best.ckpt' for command, model_name in
+                 zip(commands, model_names)]
 
 metrics = [
     'frame_f1_avg',
@@ -163,7 +169,8 @@ stats_all = {}
 if not args.overwrite:
     df_existing = pd.read_csv(csv_path)
 
-for model_id, model_name, wandb_path, note, eval_command in zip(model_ids, model_names, wandb_paths, notes, eval_commands):
+for model_id, model_name, wandb_path, note, eval_command in zip(model_ids, model_names, wandb_paths, notes,
+                                                                eval_commands):
     if (not args.overwrite) and model_id in df_existing['id'].unique():
         continue
 

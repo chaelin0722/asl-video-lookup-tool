@@ -3,14 +3,13 @@ from typing import List
 
 import numpy as np
 import torch
+from pose_format.utils.generic import fake_pose
 
-from pose_to_segments.src.data import (
+from sign_language_segmentation.src.data import (
     PoseSegmentsDataset,
     PoseSegmentsDatum,
     Segment,
 )
-
-from _shared.pose_utils import fake_pose
 
 
 def single_datum(segments: List[List[Segment]], **pose_kwargs) -> PoseSegmentsDatum:
@@ -83,6 +82,7 @@ class DataTestCase(unittest.TestCase):
         dataset = PoseSegmentsDataset([datum], hand_normalization=True, optical_flow=True)
         pose = dataset[0]["pose"]
         self.assertEqual(pose["data"].shape, (5, 137 + 21 + 21, 4))
+
 
 if __name__ == '__main__':
     unittest.main()

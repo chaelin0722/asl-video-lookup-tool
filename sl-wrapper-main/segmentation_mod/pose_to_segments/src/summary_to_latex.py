@@ -2,7 +2,7 @@ import csv
 from argparse import ArgumentParser
 
 parser = ArgumentParser()
-parser.add_argument('--input', type=str, default='./pose_to_segments/src/summary_pro.csv')
+parser.add_argument('--input', type=str, default='./sign_language_segmentation/src/summary_pro.csv')
 parser.add_argument('--verbose', action='store_true')
 parser.add_argument('--preliminary', action='store_true')
 args = parser.parse_args()
@@ -10,7 +10,7 @@ args = parser.parse_args()
 # LaTeX table structure
 if args.verbose:
     if args.preliminary:
-        latex_table=r"""
+        latex_table = r"""
 \begin{tabular}{lllccc|ccc}
 \toprule
 & & & \multicolumn{3}{c}{\textbf{Sign}} & \multicolumn{3}{c}{\textbf{Phrase}}\\
@@ -60,23 +60,26 @@ with open(args.input, 'r') as f:
         if args.preliminary:
             row_dict['id'] = row_dict['id'].replace('E', 'P')
             row_dict['note'] = row_dict['note'].replace('E', 'P')
-        
+
         row_dict['test_sign_frame_f1'] = f"${row_dict['test_sign_frame_f1']}$"
         row_dict['test_sentence_frame_f1'] = f"${row_dict['test_sentence_frame_f1']}$"
         row_dict['test_sign_segment_IoU'] = f"${row_dict['test_sign_segment_IoU']}$"
         row_dict['test_sign_segment_percentage'] = f"${row_dict['test_sign_segment_percentage']}$"
         row_dict['test_sentence_segment_percentage'] = f"${row_dict['test_sentence_segment_percentage']}$"
         row_dict['test_sentence_segment_IoU'] = f"${row_dict['test_sentence_segment_IoU']}$"
-        
+
         if row_dict['id'] in ['E0', 'P0', 'P0.1']:
             row_dict['test_sign_frame_f1'] = '---'
             row_dict['test_sentence_frame_f1'] = '---'
-        
-        latex_table += r"\textbf{" + row_dict['id'] + r"} & \textbf{" + row_dict['note'].replace('_', '\\_') + "}" + " & " 
+
+        latex_table += r"\textbf{" + row_dict['id'] + r"} & \textbf{" + row_dict['note'].replace('_',
+                                                                                                 '\\_') + "}" + " & "
         if args.verbose:
             latex_table += r"\textbf{test} &"
-        latex_table += row_dict['test_sign_frame_f1'] + " & " + row_dict['test_sign_segment_IoU'] + " & " + row_dict['test_sign_segment_percentage'] + " & "
-        latex_table += row_dict['test_sentence_frame_f1'] + " & " + row_dict['test_sentence_segment_IoU'] + " & " + row_dict['test_sentence_segment_percentage']
+        latex_table += row_dict['test_sign_frame_f1'] + " & " + row_dict['test_sign_segment_IoU'] + " & " + row_dict[
+            'test_sign_segment_percentage'] + " & "
+        latex_table += row_dict['test_sentence_frame_f1'] + " & " + row_dict['test_sentence_segment_IoU'] + " & " + \
+                       row_dict['test_sentence_segment_percentage']
         if not args.preliminary:
             latex_table += " & " + row_dict['#parameters'] + " & " + row_dict['training_time_avg']
         latex_table += r"\\" + "\n"
@@ -98,12 +101,13 @@ with open(args.input, 'r') as f:
                 row_dict['dev_sentence_frame_f1'] = '---'
 
             latex_table += r"& & \textbf{dev} &"
-            latex_table += row_dict['dev_sign_frame_f1'] + " & " + row_dict['dev_sign_segment_IoU'] + " & " + row_dict['dev_sign_segment_percentage'] + " & "
-            latex_table += row_dict['dev_sentence_frame_f1'] + " & " + row_dict['dev_sentence_segment_IoU'] + " & " + row_dict['dev_sentence_segment_percentage']
+            latex_table += row_dict['dev_sign_frame_f1'] + " & " + row_dict['dev_sign_segment_IoU'] + " & " + row_dict[
+                'dev_sign_segment_percentage'] + " & "
+            latex_table += row_dict['dev_sentence_frame_f1'] + " & " + row_dict['dev_sentence_segment_IoU'] + " & " + \
+                           row_dict['dev_sentence_segment_percentage']
             if not args.preliminary:
                 latex_table += " & " + row_dict['#parameters'] + " & " + row_dict['training_time_avg']
             latex_table += r"\\" + "\n"
-
 
 latex_table += r"""
 \bottomrule

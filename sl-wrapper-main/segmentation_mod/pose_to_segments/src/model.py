@@ -1,17 +1,18 @@
 import math
 from typing import List
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pytorch_lightning as pl
 import torch
 import torch.nn.functional as F
-from torch.optim.lr_scheduler import ReduceLROnPlateau
-from torch import nn
 import wandb
-import matplotlib.pyplot as plt
+from torch import nn
+from torch.optim.lr_scheduler import ReduceLROnPlateau
 
+from .utils.metrics import frame_accuracy, frame_f1, frame_precision, frame_recall, frame_roc_auc, segment_percentage, \
+    segment_IoU, segment_boundary_f1
 from .utils.probs_to_segments import probs_to_segments
-from .utils.metrics import frame_accuracy, frame_f1, frame_precision, frame_recall, frame_roc_auc, segment_percentage, segment_IoU, segment_boundary_f1
 
 
 class PoseTaggingModel(pl.LightningModule):
@@ -56,23 +57,23 @@ class PoseTaggingModel(pl.LightningModule):
 
         if encoder_autoregressive and encoder_bidirectional:
             self.encoder_forward = nn.LSTM(lstm_input_dim,
-                                        lstm_hidden_dim,
-                                        num_layers=encoder_depth,
-                                        batch_first=True)
-            self.encoder_backward= nn.LSTM(lstm_input_dim,
-                                        lstm_hidden_dim,
-                                        num_layers=encoder_depth,
-                                        batch_first=True)
+                                           lstm_hidden_dim,
+                                           num_layers=encoder_depth,
+                                           batch_first=True)
+            self.encoder_backward = nn.LSTM(lstm_input_dim,
+                                            lstm_hidden_dim,
+                                            num_layers=encoder_depth,
+                                            batch_first=True)
             self.sign_bio_head_forward = nn.Linear(lstm_hidden_dim, tagset_size)
             self.sign_bio_head_backward = nn.Linear(lstm_hidden_dim, tagset_size)
             self.sentence_bio_head_forward = nn.Linear(lstm_hidden_dim, tagset_size)
             self.sentence_bio_head_backward = nn.Linear(lstm_hidden_dim, tagset_size)
         else:
             self.encoder = nn.LSTM(lstm_input_dim,
-                                lstm_hidden_dim,
-                                num_layers=encoder_depth,
-                                batch_first=True,
-                                bidirectional=encoder_bidirectional)
+                                   lstm_hidden_dim,
+                                   num_layers=encoder_depth,
+                                   batch_first=True,
+                                   bidirectional=encoder_bidirectional)
             self.sign_bio_head = nn.Linear(hidden_dim, tagset_size)
             self.sentence_bio_head = nn.Linear(hidden_dim, tagset_size)
 
@@ -105,16 +106,20 @@ class PoseTaggingModel(pl.LightningModule):
                 sentence_bio_logits_backward = torch.zeros(batch_size, sent_len, self.tagset_size, device=self.device)
                 sentence_bio_logit_backward = torch.zeros(batch_size, self.tagset_size, device=self.device)
                 hidden_backward = None
-                
+
                 for i in range(sent_len):
-                    output_forward, hidden_forward = self.encoder_forward(torch.cat([pose_projection[:, i], sign_bio_logit_forward, sentence_bio_logit_forward], 1), hidden_forward)
+                    output_forward, hidden_forward = self.encoder_forward(
+                        torch.cat([pose_projection[:, i], sign_bio_logit_forward, sentence_bio_logit_forward], 1),
+                        hidden_forward)
                     sign_bio_logit_forward = self.sign_bio_head_forward(output_forward)
                     sentence_bio_logit_forward = self.sentence_bio_head_forward(output_forward)
                     sign_bio_logits_forward[:, i] = sign_bio_logit_forward
                     sentence_bio_logits_forward[:, i] = sentence_bio_logit_forward
 
                     back_i = sent_len - 1 - i
-                    output_backward, hidden_backward = self.encoder_backward(torch.cat([pose_projection[:, back_i], sign_bio_logit_backward, sentence_bio_logit_backward], 1), hidden_backward)
+                    output_backward, hidden_backward = self.encoder_backward(
+                        torch.cat([pose_projection[:, back_i], sign_bio_logit_backward, sentence_bio_logit_backward],
+                                  1), hidden_backward)
                     sign_bio_logit_backward = self.sign_bio_head_backward(output_backward)
                     sentence_bio_logit_backward = self.sentence_bio_head_backward(output_backward)
                     sign_bio_logits_backward[:, back_i] = sign_bio_logit_backward
@@ -130,7 +135,8 @@ class PoseTaggingModel(pl.LightningModule):
                 hidden = None
 
                 for i in range(sent_len):
-                    output, hidden = self.encoder(torch.cat([pose_projection[:, i], sign_bio_logit, sentence_bio_logit], 1), hidden)
+                    output, hidden = self.encoder(
+                        torch.cat([pose_projection[:, i], sign_bio_logit, sentence_bio_logit], 1), hidden)
                     sign_bio_logit = self.sign_bio_head(output)
                     sentence_bio_logit = self.sentence_bio_head(output)
                     sign_bio_logits[:, i] = sign_bio_logit
@@ -147,7 +153,7 @@ class PoseTaggingModel(pl.LightningModule):
 
     def validation_step(self, batch, *unused_args):
         return self.step(batch, *unused_args, name="validation")
-    
+
     def test_step(self, batch, *unused_args):
         return self.step(batch, *unused_args, name="test")
 
@@ -202,13 +208,15 @@ class PoseTaggingModel(pl.LightningModule):
                 metrics['frame_f1_O'].append(frame_f1(probs, gold, average=None)[0])
                 metrics['frame_precision_O'].append(frame_precision(probs, gold, average=None)[0])
                 metrics['frame_recall_O'].append(frame_recall(probs, gold, average=None)[0])
-                metrics['frame_roc_auc_O'].append(frame_roc_auc(probs, gold, average=None, multi_class='ovr', labels=[0, 1, 2])[0])
+                metrics['frame_roc_auc_O'].append(
+                    frame_roc_auc(probs, gold, average=None, multi_class='ovr', labels=[0, 1, 2])[0])
 
             # segment IoU and percentage
-            segments = probs_to_segments(probs, b_threshold=self.b_threshold, o_threshold=self.o_threshold, threshold_likeliest=self.threshold_likeliest)
+            segments = probs_to_segments(probs, b_threshold=self.b_threshold, o_threshold=self.o_threshold,
+                                         threshold_likeliest=self.threshold_likeliest)
             # convert segments from second to frame
             segments_gold = [{
-                'start': math.floor(s['start_time'] * fps), 
+                'start': math.floor(s['start_time'] * fps),
                 'end': math.floor(s['end_time'] * fps),
             } for s in segments_gold]
             data['segments'] = data['segments'] + segments
@@ -221,22 +229,22 @@ class PoseTaggingModel(pl.LightningModule):
 
             if advanced_plot:
                 # probs plot
-                title= f"{level} probs curve #{idx}"
+                title = f"{level} probs curve #{idx}"
                 probs = np.exp(probs.numpy().squeeze()) * 100
                 x = range(probs.shape[0])
                 y_threshold = [50.0] * probs.shape[0]
                 y_B_probs = probs[:, 1].squeeze()
                 y_I_probs = probs[:, 2].squeeze()
                 y_O_probs = probs[:, 0].squeeze()
-                plt.plot(x, y_B_probs, 'c', label = "B")
-                plt.plot(x, y_I_probs, 'g', label = "I")
-                plt.plot(x, y_O_probs, 'r', label = "O")
-                plt.plot(x, [self.b_threshold] * probs.shape[0], 'w--', label = "b_threshold")
-                plt.plot(x, [self.o_threshold] * probs.shape[0], 'w--', label = "o_threshold")
+                plt.plot(x, y_B_probs, 'c', label="B")
+                plt.plot(x, y_I_probs, 'g', label="I")
+                plt.plot(x, y_O_probs, 'r', label="O")
+                plt.plot(x, [self.b_threshold] * probs.shape[0], 'w--', label="b_threshold")
+                plt.plot(x, [self.o_threshold] * probs.shape[0], 'w--', label="o_threshold")
                 for segment in segments_gold:
                     span = range(segment['start'], segment['end'])
                     plt.plot(span, [100] * len(span), 'g')
-                plt.legend() # produce annoying warnings, do not know why
+                plt.legend()  # produce annoying warnings, do not know why
                 plt.xlabel("frames")
                 plt.ylabel("probability")
                 wandb.log({title: plt}, commit=False)
@@ -252,15 +260,15 @@ class PoseTaggingModel(pl.LightningModule):
             wandb.log({title: wandb.plot.confusion_matrix(
                 title=title,
                 preds=probs.argmax(dim=1).tolist(),
-                y_true=gold.tolist(), 
+                y_true=gold.tolist(),
                 class_names=labels
             )}, commit=False)
 
-            title = f"{level} precision-recall curve" 
+            title = f"{level} precision-recall curve"
             wandb.log({title: wandb.plot.pr_curve(
                 title=title,
                 y_true=gold.numpy(),
-                y_probas=probs.numpy(), 
+                y_probas=probs.numpy(),
                 labels=labels
             )}, commit=False)
 
@@ -273,7 +281,7 @@ class PoseTaggingModel(pl.LightningModule):
             #     print(segments_length)
             #     print(segments_gold_length)
 
-            title = f"{level} segment length distribution" 
+            title = f"{level} segment length distribution"
             bins = 100
             alpha = 0.5
             max_value = 1000 if level == 'sign' else 100
@@ -303,10 +311,13 @@ class PoseTaggingModel(pl.LightningModule):
         log_probs = self.forward(pose_data)
         mask = batch["mask"]
         fps = batch["pose"]["obj"][0].body.fps
-        
-        advanced_plot = (wandb.run is not None) and (name == 'validation') and (self.current_epoch == 0 or self.current_epoch % 10 == 9)
-        sign_metrics = self.evaluate('sign', fps, batch["bio"]["sign"], log_probs["sign"], batch["segments"]["sign"], mask, batch['id'], advanced_plot)
-        sentence_metrics = self.evaluate('sentence', fps, batch["bio"]["sentence"], log_probs["sentence"], batch["segments"]["sentence"], mask, batch['id'], advanced_plot)
+
+        advanced_plot = (wandb.run is not None) and (name == 'validation') and (
+                    self.current_epoch == 0 or self.current_epoch % 10 == 9)
+        sign_metrics = self.evaluate('sign', fps, batch["bio"]["sign"], log_probs["sign"], batch["segments"]["sign"],
+                                     mask, batch['id'], advanced_plot)
+        sentence_metrics = self.evaluate('sentence', fps, batch["bio"]["sentence"], log_probs["sentence"],
+                                         batch["segments"]["sentence"], mask, batch['id'], advanced_plot)
 
         loss = sign_metrics['loss'] + sentence_metrics['loss']
         self.log(f"{name}_loss", loss, batch_size=batch_size)

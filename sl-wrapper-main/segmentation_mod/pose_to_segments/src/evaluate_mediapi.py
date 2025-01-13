@@ -6,15 +6,16 @@ from functools import lru_cache
 from typing import Any, Dict, Iterable, List, Optional, Tuple, TypedDict
 
 import numpy as np
+import torch
+import webvtt
 from pose_format import PoseHeader, Pose
 from pose_format.numpy import NumPyPoseBody
 from pose_format.pose_header import PoseHeaderDimensions
 from tqdm import tqdm
 
-from pose_to_segments.bin import load_model, process_pose, predict
-from .utils.metrics import frame_accuracy, frame_f1, frame_precision, frame_recall, frame_roc_auc, segment_percentage, segment_IoU
-import webvtt
-import torch
+from sign_language_segmentation.bin import load_model, process_pose, predict
+from .utils.metrics import frame_accuracy, frame_f1, frame_precision, frame_recall, frame_roc_auc, segment_percentage, \
+    segment_IoU
 
 
 def read_pose_tsv_file(pose_tsv: bytes, num_keypoints: int = 33):
@@ -165,6 +166,7 @@ def build_bio(identifier: str, timestamps: torch.Tensor, segments: List[Segment]
 
     return bio
 
+
 def build_classes_vectors(datum) -> Tuple[SegmentsDict, BIODict]:
     pose = datum["pose"]
     pose_length = len(pose.body.data)
@@ -177,11 +179,13 @@ def build_classes_vectors(datum) -> Tuple[SegmentsDict, BIODict]:
     bio = {kind: build_bio('test', timestamps, s, b_tag=b_tag) for kind, s in segments.items()}
     return segments, bio
 
+
 def convert_time(vtt_time):
     hhmmss, fraction = vtt_time.split('.')
     h, m, s = hhmmss.split(':')
     hhmmss = int(h) * 3600 + int(m) * 60 + int(s)
     return hhmmss + float(int(fraction) / 1000)
+
 
 def main(model_path: str, mediapi_path: str, pose_path: str = None, optical_flow=False, hand_normalization=False):
     test_set = read_mediapi_set(mediapi_path, pose_path, 'test')
@@ -201,7 +205,8 @@ def main(model_path: str, mediapi_path: str, pose_path: str = None, optical_flow
 
         print('---------------')
         print(datum['subtitles'])
-        datum["segments"] = [{"start_time": convert_time(c.start), "end_time": convert_time(c.end)} for c in datum["subtitles"]]
+        datum["segments"] = [{"start_time": convert_time(c.start), "end_time": convert_time(c.end)} for c in
+                             datum["subtitles"]]
         print(datum["segments"])
         segments, bio = build_classes_vectors(datum)
         gold = bio['sentence']
@@ -227,12 +232,13 @@ def main(model_path: str, mediapi_path: str, pose_path: str = None, optical_flow
             metrics['frame_f1_O'].append(frame_f1(probs, gold, average=None)[0])
             metrics['frame_precision_O'].append(frame_precision(probs, gold, average=None)[0])
             metrics['frame_recall_O'].append(frame_recall(probs, gold, average=None)[0])
-            metrics['frame_roc_auc_O'].append(frame_roc_auc(probs, gold, average=None, multi_class='ovr', labels=[0, 1, 2])[0])
+            metrics['frame_roc_auc_O'].append(
+                frame_roc_auc(probs, gold, average=None, multi_class='ovr', labels=[0, 1, 2])[0])
 
         print(metrics)
 
         # if i == 1:
-            # exit()
+        # exit()
 
     print(len(metrics['frame_f1']))
 
@@ -248,7 +254,7 @@ if __name__ == "__main__":
     parser.add_argument("--mediapi-path", type=str, required=True)
     parser.add_argument("--pose-path", type=str)
     # parser.add_argument("--model-path", type=str,
-    #                     default='/home/nlp/amit/sign-language/transcription/pose_to_segments/dist/model_E4s-1.pth')
+    #                     default='/home/nlp/amit/sign-language/transcription/sign_language_segmentation/dist/model_E4s-1.pth')
     # parser.add_argument("--mediapi-path", type=str,
     #                     default='/home/nlp/amit/WWW/tmp/mediapi-skel.zip')
     # parser.add_argument("--pose-path", type=str,

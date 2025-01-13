@@ -4,9 +4,9 @@ import pickle
 import matplotlib.pyplot as plt
 import numpy as np
 
-from pose_to_segments.src.args import args
-from pose_to_segments.src.data import BIO
-from pose_to_segments.src.utils.probs_to_segments import probs_to_segments
+from sign_language_segmentation.src.args import args
+from sign_language_segmentation.src.data import BIO
+from sign_language_segmentation.src.utils.probs_to_segments import probs_to_segments
 
 
 def prepare_predictions():
@@ -71,8 +71,8 @@ def eval_segments(segments1, segments2):
     for i, s1 in enumerate(segments1):
         best_match_i = np.argmin(np.abs(mid_points_2 - mid_points_1[i]))
         s2 = segments2[best_match_i]
-        error += (s1["start"] - s2["start"])**2
-        error += (s1["end"] - s2["end"])**2
+        error += (s1["start"] - s2["start"]) ** 2
+        error += (s1["end"] - s2["end"]) ** 2
 
     return error
 

@@ -3,7 +3,7 @@ import unittest
 
 import torch
 
-from pose_to_segments.src.model import PoseTaggingModel
+from sign_language_segmentation.src.model import PoseTaggingModel
 
 
 def get_batch(bsz=4):
