@@ -40,6 +40,7 @@
         @selection-play="selectionPlay()"
         @upload-video="uploadVideo()"
         @execute-model="executePythonScript()"
+        @execute-recognition="executeRecPythonScript()"
       />
       <custom-button
       size="small"
@@ -178,11 +179,12 @@ export default {
       });
     },
 
-
     async executePythonScript() {
       try {
         const formData = new FormData();
         formData.append("video", this.uploadedFile);
+        formData.append("scriptName", "submit"); // 스크립트 이름
+
         //console.log("FormData after append:", formData.get("video"));
 
         const response = await axios.post("http://localhost:3000/process-video", formData, {
@@ -242,6 +244,35 @@ export default {
         }
       }
     },
+    async executeRecPythonScript() {
+      try {
+        const formData = new FormData();
+        formData.append("video", this.uploadedFile); // 업로드된 비디오 파일
+        formData.append("start", this.timelineSelection.start * this.duration); // 선택된 시작 시간
+        formData.append("end", this.timelineSelection.end * this.duration); // 선택된 종료 시간
+        formData.append("scriptName", "find-a-sign"); // 스크립트 이름
+
+        console.log("Sending request to backend...");
+        console.log("Uploaded File:", this.uploadedFile);
+        console.log("Start:", this.timelineSelection.start * this.duration);
+        console.log("End:", this.timelineSelection.end * this.duration);
+        const response = await axios.post("http://localhost:3000/process-video", formData, {
+          headers: { "Content-Type": "multipart/form-data" },
+        });
+
+        this.segments = response.data; // JSON 결과를 UI에 표시
+        console.log("Updated segments:", this.segments);
+
+        this.$refs.search.signs = this.segments; // Search 컴포넌트로 데이터 전달
+        console.log("Deliver data to Search.vue", this.$refs.search.signs);
+
+      } catch (error) {
+        console.error("Error executing recognition Python script:", error);
+      } finally {
+        console.log("Recognition script execution complete."); // 선택적으로 추가
+      }
+    },
+
     selectionPlay: function () {
       if (this.player) {
         this.$saveAction('play_selection_click', {
@@ -297,6 +328,10 @@ export default {
       }
     },
     advanceStep: function () {
+      if (this.currentStep >= this.experimentalSetup.length - 1) {
+      console.warn('No more steps available.');
+      return;
+    }
       this.currentStep += 1;
       document.querySelectorAll('video').forEach(vid => vid.pause());
       this.$saveAction('next_video', { scratchpad: this.scratchpad });
@@ -305,14 +340,22 @@ export default {
   },
   computed: {
     frameBaseName: function () {
-      if (!this.experimentalSetup || !this.latinSquare) {
+      if (!this.experimentalSetup ||
+          !this.latinSquare ||
+          !this.latinSquare[this.currentStep] ||
+          !this.experimentalSetup[this.latinSquare[this.currentStep]])
+      {
         return 'frame';
       }
       return this.experimentalSetup[this.latinSquare[this.currentStep]]
         .frame_base_name;
     },
     frameNumber: function () {
-      if (!this.experimentalSetup || !this.latinSquare) {
+      if (!this.experimentalSetup ||
+          !this.latinSquare ||
+          !this.latinSquare[this.currentStep] ||
+          !this.experimentalSetup[this.latinSquare[this.currentStep]])
+      {
         return 1;
       }
       return parseInt(

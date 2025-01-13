@@ -21,7 +21,11 @@ export default {
   name: 'ScreenCalibration',
   components: { CustomButton },
   methods: {
-    submit: function () {
+    submit(){
+      this.$router.push('/video');
+    },
+
+    /*    submit: function () {
       this.$saveAction('calibrated_screen', {
         width: window.innerWidth,
         height: window.innerHeight,
@@ -30,7 +34,7 @@ export default {
           this.$router.push('/video');
         }
       });
-    },
+    },*/
   },
 };
 </script>

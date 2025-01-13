@@ -46,12 +46,62 @@ app.post("/process-video", upload.single("video"), (req, res) => {
     `${path.basename(req.file.originalname, path.extname(req.file.originalname))}.json`
   );
 */
-  // Python 스크립트 실행
-  const pythonProcess = spawn("python3", [
+  // Run Python Script
+  // 실행할 Python 스크립트 경로 설정
+  let pythonProcess;
+  if (req.body.scriptName === "submit") {
+    /*    pythonProcess = spawn("python3", [
+          "/Users/zzenninkim/Documents/Research/sign-segmentation/demo/e2e_newseg2rec.py",
+          "--video_path",
+          videoPath,
+          "--save_path",
+          "/Users/zzenninkim/Documents/Research/sign-segmentation/demo/results"ßß,
+          "--save_segments"
+
+      ]);*/
+      pythonProcess = spawn("python3", [
     "/Users/zzenninkim/Documents/Research/sl-wrapper-main/segmentation_mod/e2e_seg2rec.py",
     "--video",
     videoPath,
   ]);
+
+  } else if (req.body.scriptName === "find-a-sign") {
+    console.log("start recognition! find-a-sign");
+    const videoPath = req.file.path; // 업로드된 비디오 경로
+    const start = parseFloat(req.body.start); // 선택된 시작 시간
+    const end = parseFloat(req.body.end); // 선택된 종료 시간
+
+    const output_file = path.join(
+    path.dirname(videoPath),
+    path.basename(videoPath, path.extname(videoPath)) + '.txt'
+    );
+
+
+    // create segment.txt
+    const txtContent = `Start: ${start.toFixed(3)} sec, End: ${end.toFixed(3)} sec\n`;
+    fs.writeFileSync(output_file, txtContent);
+
+    console.log(`Created file: ${output_file}`);
+
+
+    pythonProcess = spawn("python3", [
+      "/Users/zzenninkim/Documents/Research/sl-wrapper-main/recognition_mod/e2e_recognition.py",
+      "--input_segtxt", output_file,
+      "--video", videoPath]);
+
+  } else {
+    return res.status(400).json({ error: "Invalid scriptName provided." });
+  }
+
+
+
+
+
+  /*
+  * python demo/demo.py
+  * --video_path /Users/zzenninkim/dataset/How2Sign/Video_test_for_analysis/G3FhmHz_7hs_15-10-rgb_front.mp4
+  * --slowdown_factor 1 --save_segments --viz
+  * */
 
 
   // handle python process exit

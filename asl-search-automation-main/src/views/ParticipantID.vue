@@ -18,13 +18,21 @@ export default {
     };
   },
   methods: {
-    submit: function () {
+    submit() {
+      if (this.id.trim()=== ""){
+        alert("Please enter a Participant ID.");
+      }else{
+        this.$router.push({name:"ScreenCalibration"});
+      }
+    },
+
+/*    submit: function () {
       this.$saveAction('participant_code', { id: this.id }).then((success) => {
         if (success) {
           this.$router.push('/screen-calibration');
         }
       });
-    },
+    },*/
   },
 };
 </script>

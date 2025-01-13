@@ -26,9 +26,11 @@
     </button>
 
     <button id="execute-model" @click="$emit('execute-model')">
-      Submit
+      Segment and Search
     </button>
-
+    <button id="execute-recognition" @click="$emit('execute-recognition')">
+      Search
+    </button>
 
     <p id="elapsed-time">
       <span class="hours" :class="{ 'less-than-an-hour': duration < 3600 }">{{
@@ -161,6 +163,19 @@ export default {
     color: #fff;
   }
 }
+#execute-recognition{
+  background-color: #444;
+  border-color: $accent;
+  color: $accent;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  &:hover {
+    background-color: $accent;
+    color: #fff;
+  }
+}
+
 button {
   border: none;
   padding: 0.25rem 1rem;

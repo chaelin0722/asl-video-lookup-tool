@@ -1,3 +1,5 @@
+<!--handling json data for each sign results here!-->
+
 <template>
   <div id="search-result">
     <div class="img-container">
@@ -5,9 +7,9 @@
     </div>
     <div class="details">
 
-      <p><strong>Segment:</strong> {{ startTime }} <strong>-</strong> {{ endTime }}</p>
+      <!--<p><strong>Segment:</strong> {{ startTime }} <strong>-</strong> {{ endTime }}</p>-->
       <p><strong>Sign:</strong> {{ sign }}</p>
-      <p>Confidence: {{ confidence }}</p>
+      <p>Confidence: {{ confidence.toFixed(1) }}</p>
       <p><strong>Hands:</strong> {{ hands }}</p>
       <p><strong>Handshape:</strong> {{ handshape }}</p>
       <p><strong>Location:</strong> {{ location }}</p>
