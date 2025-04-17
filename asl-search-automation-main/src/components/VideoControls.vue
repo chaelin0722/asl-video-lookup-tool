@@ -17,9 +17,14 @@
     </button>
     <!--Add upload button-->
 
+    <!-- Add record button -->
+    <button id="record-video" @click="$emit('record-video')">
+      Recording
+    </button>
+    <!-- Add record button -->
     <button
       id="selection-play"
-      @click="$emit('selection-play')"
+      @click="$emit('selection-play', { start: startSelection, end: endSelection })"
       :class="{ pause: playingSelection, play: !playingSelection }"
     >
       Play selection
@@ -68,6 +73,14 @@ export default {
       type: Number,
       default: 0,
     },
+    startSelection: {
+      type: Number,
+      default: 0,
+    },
+    endSelection: {
+      type: Number,
+      default: 1,
+    },
   },
   computed: {
     generalPlayClass: function () {
@@ -112,7 +125,7 @@ export default {
 
 #elapsed-time {
   @include fs(1);
-  margin-left: auto; /* 오른쪽에 배치 */
+  margin-left: auto; /* arrange on right side */
   text-align: right;
   color: white;
   display: flex;
@@ -149,6 +162,19 @@ export default {
     color: #fff;
   }
 }
+#record-video{
+  background-color: #444;
+  border-color: $accent;
+  color: $accent;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  &:hover {
+    background-color: $accent;
+    color: #fff;
+  }
+}
+
 
 // added upload
 #execute-model{

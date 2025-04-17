@@ -2,12 +2,12 @@
 <template>
   <div id="span-selection">
     <header>
-      <h1>Video {{ currentStep }}</h1>
-      <div id="next-video">
+
+<!--<div id="next-video">
         <custom-button size="small" :has-border="true" @clicked="advanceStep()"
           >{{ nextStepText }}
         </custom-button>
-      </div>
+      </div>-->
     </header>
     <div id="video-container">
       <video ref="videoPlayer" class="video-js"></video>
@@ -41,6 +41,7 @@
         @upload-video="uploadVideo()"
         @execute-model="executePythonScript()"
         @execute-recognition="executeRecPythonScript()"
+        @record-video="Recording()"
       />
       <custom-button
       size="small"
@@ -71,7 +72,6 @@ import Search from '../components/Search.vue';
 import CustomButton from '../components/CustomButton.vue';
 //import runPythonScript from "../backend.js";
 import axios from "axios";
-
 
 export default {
   name: 'SpanSelection',
@@ -104,6 +104,11 @@ export default {
       signs: [],
       latinSquare: [],
       segments: [], // JSON data
+      isRecording: false,
+      mediaRecorder: null,
+      recordedChunks: [],
+      webcamStream: null,
+      recordedBlob: null,
     };
   },
   methods: {
@@ -122,6 +127,7 @@ export default {
           this.player.currentTime(0);
           this.playing = false;
 
+          console.log("Extracting frames for uploaded file:", url);
           await this.extractFrames(url);
 
           this.uploadedFile = file; // 파일을 변수에 저장하여 나중에 사용
@@ -131,26 +137,48 @@ export default {
       input.click();
     },
 
-    async extractFrames(videoUrl, fps = 30, videoWidth = 50) {
+    async extractFrames(videoUrl, fps = 29, videoWidth = 50) {
+
       return new Promise((resolve) => {
         const video = document.createElement('video');
         video.src = videoUrl;
         video.crossOrigin = 'anonymous';
+        video.multed = true; // added to prevent auto play
 
         const canvas = document.createElement('canvas');
         const ctx = canvas.getContext('2d');
 
-        video.onloadedmetadata = () => {
+        video.onloadedmetadata = async () => {
+          // forcing to load all the video if the video duration is Infinity
+          // webm file only load metadata, so they don't load all the video file. and this leads to problem that they can't extract all the frames.
+          if (video.duration === Infinity) {
+            console.warn("Video duration is Infinity. Attempting to fix...");
+
+            await new Promise((resolve) => {
+              video.currentTime = Number.MAX_SAFE_INTEGER;
+              video.ontimeupdate = () => {
+                video.ontimeupdate = null;
+                console.log("Fixed duration:", video.duration);
+                resolve();
+              };
+            });
+          }
+
+
           const duration = video.duration;
+          console.log("video length: ", duration);
           const totalFrames = Math.floor(duration * fps);
+          console.log("total Frames: ", totalFrames);
 
           // Calculate the number of frames to show on the timeline
           canvas.width = video.videoWidth;
           canvas.height = video.videoHeight;
+          console.log("canvas.width: ", canvas.width);
           const totalFramesToShow = Math.floor(canvas.width / videoWidth); // 총 표시할 프레임 수
+          console.log("total frames to show: ", totalFramesToShow);
 
           const frames = [];
-          let currentFrame = 0;
+          let currentFrame = 3; // to avoid black frame of recorded video
 
           const captureFrame = () => {
             if (frames.length >= totalFramesToShow || currentFrame >= totalFrames) {
@@ -161,22 +189,165 @@ export default {
 
             // Calculate the frame interval to achieve the desired number of frames
             const interval = Math.floor(totalFrames / totalFramesToShow);
-
+            console.log("interval: ", interval)
             // Set video time to the current frame time
-            video.currentTime = currentFrame / fps;
+            video.currentTime = (currentFrame + 1) / fps;
+            console.log("Trying to seek to:", video.currentTime, "Frame:", currentFrame);
 
             video.onseeked = () => {
-              // Draw the current frame only if it meets the interval condition
-              ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-              frames.push(canvas.toDataURL('image/jpeg')); // Add frame to the list
-              currentFrame += interval; // Move to the next interval frame
-              captureFrame();
+              setTimeout(() => {  // 탐색 후 프레임을 안정적으로 가져오기 위해 약간의 지연 추가
+                  console.log("Seeking to: ", video.currentTime);
+                  // Draw the current frame only if it meets the interval condition
+                  ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+                  frames.push(canvas.toDataURL('image/jpeg')); // Add frame to the list
+                  currentFrame += interval; // Move to the next interval frame
+                  captureFrame();
+
+                }, 150); // wait for 50ms and then execute
+              };
             };
-          };
 
           captureFrame();
         };
       });
+    },
+
+    async Recording() {
+      if (!this.isRecording) {
+        await this.startRecording();
+      } else {
+        this.stopRecording();
+      }
+    },
+    async startRecording() {
+      try {
+        // allow webcam
+        const stream = await navigator.mediaDevices.getUserMedia(
+            { video: {width: 640, height: 480 , frameRate: { exact: 30}  // fix w, h, fps
+              }, audio: true });
+        this.webcamStream = stream; // save stream
+
+
+        // make sure users can see while performing
+        if (this.$refs.videoPlayer) {
+          this.$refs.videoPlayer.srcObject = stream;
+          this.$refs.videoPlayer.play();
+        }
+
+        // MediaRecorder
+        this.mediaRecorder = new MediaRecorder(stream);
+        this.recordedChunks = [];
+
+        this.mediaRecorder.ondataavailable = (event) => {
+          if (event.data.size > 0) {
+            this.recordedChunks.push(event.data);
+          }
+        };
+
+        this.mediaRecorder.onstop = () => {
+          this.recordedBlob = new Blob(this.recordedChunks, { type: 'video/webm' }); //webm
+          console.log("Recording completed. Blob size:", this.recordedBlob.size);
+
+          if (this.recordedBlob.size === 0) {
+            console.error("Recorded file is empty!");
+            return;
+          }
+          /////////// added
+          // 📌 녹화된 비디오의 FPS 체크하기!
+          const video = document.createElement('video');
+          video.src = URL.createObjectURL(this.recordedBlob);
+          video.onloadedmetadata = async () => {
+            console.log("Before fixing: Video duration:", video.duration); // Infinity 출력됨
+
+            if (video.duration === Infinity) {
+              console.warn("Video duration is Infinity. Attempting to fix...");
+
+              await new Promise((resolve) => {
+                video.currentTime = Number.MAX_SAFE_INTEGER;
+                video.ontimeupdate = () => {
+                  video.ontimeupdate = null;
+                  console.log("Fixed duration:", video.duration);  // 정상적인 길이 출력!
+                  resolve();
+                };
+              });
+            }
+
+            console.log("Final video duration:", video.duration);
+          };
+          ///////// added
+
+
+          this.uploadRecordedVideo();
+        };
+
+        this.mediaRecorder.start();
+        this.isRecording = true;
+      } catch (error) {
+        console.error('Error starting recording:', error);
+      }
+    },
+    stopRecording() {
+      if (this.mediaRecorder) {
+        this.mediaRecorder.stop();
+      }
+
+      // stop webcam stream
+      if (this.webcamStream) {
+        this.webcamStream.getTracks().forEach((track) => track.stop());
+        this.webcamStream = null;
+      }
+
+      if (this.$refs.videoPlayer) {
+        this.$refs.videoPlayer.srcObject = null;
+      }
+      if (this.player) {
+      this.player.src({ src: "", type: "video/webm" }); //webm
+    } else {
+      console.warn("Video player not initialized. Skipping src update.");
+    }
+
+
+      this.isRecording = false;
+    },
+    async uploadRecordedVideo() {
+      if (!this.recordedBlob) {
+        alert("No recording available to upload.");
+        return;
+      }
+
+      const webmFile = new File([this.recordedBlob], "recorded-video.webm", {
+        type: "video/webm",
+      });
+
+      // Step 1: Upload webm to backend to convert
+      const formData = new FormData();
+      formData.append("video", webmFile);
+      formData.append("scriptName", "convert-webm");
+
+      const response = await axios.post("http://localhost:3000/convert-video", formData, {
+        headers: { "Content-Type": "multipart/form-data" },
+        responseType: "blob", // <-- 바로 blob으로 받아와!
+      });
+
+      //const convertedMp4Path = response.data.output_path;
+      //console.log("MP4 path returned:", convertedMp4Path);
+      // example MP4 path returned: http://localhost:3000/video-1743623211701-794951968.mp4
+      // Step 2: Use converted mp4 to extract frames
+      const mp4Blob = response.data //await fetch(convertedMp4Path).then(res => res.blob());
+      const mp4File = new File([mp4Blob], "converted-video.mp4", { type: "video/mp4" });
+      const re_url = URL.createObjectURL(mp4File);
+
+      console.log("file blob re url:", re_url);
+      //this.player.src({ src: re_url, type: "video/mp4" });
+      //this.player.play();
+
+      this.player.pause();
+      this.player.src({ src: re_url, type: "video/mp4" });
+      this.player.ready(() => {
+        this.player.play();
+      });
+      this.uploadedFile = mp4File;
+      await this.extractFrames(re_url);
     },
 
     async executePythonScript() {

@@ -3,35 +3,83 @@ const cors = require('cors');
 const multer = require("multer");
 const { spawn } = require("child_process");
 const fs = require("fs");
+const path = require("path");
 //const path = require("path");
 
 const app = express();
 
+// to show local files to local host webpage
+const gifFolderPath = "/Users/zzenninkim/Downloads/gifs/gifs/";
+app.use('/gifs', express.static(gifFolderPath));
+// save webm -> mp4 files to here
+app.use('/tmp', express.static("/Users/zzenninkim/Documents/Research/asl-search-automation-main/src/tmp"));
+
+// Enable CORS
+app.use(cors());
+
+// Enable Cross-Origin Isolation for SharedArrayBuffer support
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
+  res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
+  next();
+});
+
+
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "/Users/zzenninkim/Documents/Research/asl-search-automation-main/src/tmp/"); // 저장할 디렉토리
+    cb(null, "/Users/zzenninkim/Documents/Research/asl-search-automation-main/src/tmp/"); // directory for save files
   },
   filename: function (req, file, cb) {
     const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
-    const originalName = file.originalname; // 원래 파일 이름
-    const extension = originalName.substring(originalName.lastIndexOf(".")); // 확장자 추출
-    cb(null, `${file.fieldname}-${uniqueSuffix}${extension}`); // 커스터마이즈된 파일 이름
+    const originalName = file.originalname; // file name
+    const extension = originalName.substring(originalName.lastIndexOf(".")); // get file format
+    cb(null, `${file.fieldname}-${uniqueSuffix}${extension}`); // file name
   },
 });
 
 const upload = multer({ storage: storage });
 
 
-// Enable CORS
-app.use(cors());
+
+
+
+// convert recorded webm file to mp4 file
+app.post("/convert-video", upload.single("video"), async (req, res) => {
+  const inputPath = req.file.path;
+  const pythonProcess = spawn("python3", [
+    "/Users/zzenninkim/Documents/Research/sl-wrapper-main/recognition_mod/convert_webm_to_mp4.py",
+    inputPath,
+  ]);
+
+  let convertedPath = "";
+  pythonProcess.stdout.on("data", (data) => {
+    convertedPath += data.toString();
+  });
+  //  send converted mp4 to process on UI
+  const outputPath = inputPath.replace(".webm", ".mp4");
+  pythonProcess.on("close", (code) => {
+    if (code !== 0) {
+      return res.status(500).json({ error: "Conversion failed" });
+    }
+    //const cleaned = convertedPath.trim();
+    //res.json({ output_path: `http://localhost:3000/tmp/${cleaned.split('/').pop()}` });
+    res.sendFile(outputPath); // 직접 파일 전송
+
+  });
+});
+
+
+
 // 비디오 처리 엔드포인트
-app.post("/process-video", upload.single("video"), (req, res) => {
+app.post("/process-video", upload.single("video"), async (req, res) => {
   if (!req.file) {
     return res.status(400).json({ error: "No video uploaded." });
   }
 
   console.log("File uploaded successfully:", req.file);
   const videoPath = req.file.path; // 임시 경로에 저장된 파일
+
 
   // JSON 파일 경로 생성 (같은 tmp 디렉토리에 저장)
   const path = require("path"); // path 모듈 사용
@@ -46,30 +94,23 @@ app.post("/process-video", upload.single("video"), (req, res) => {
     `${path.basename(req.file.originalname, path.extname(req.file.originalname))}.json`
   );
 */
+
+
+
   // Run Python Script
-  // 실행할 Python 스크립트 경로 설정
   let pythonProcess;
   if (req.body.scriptName === "submit") {
-    /*    pythonProcess = spawn("python3", [
-          "/Users/zzenninkim/Documents/Research/sign-segmentation/demo/e2e_newseg2rec.py",
-          "--video_path",
-          videoPath,
-          "--save_path",
-          "/Users/zzenninkim/Documents/Research/sign-segmentation/demo/results"ßß,
-          "--save_segments"
-
-      ]);*/
       pythonProcess = spawn("python3", [
-    "/Users/zzenninkim/Documents/Research/sl-wrapper-main/segmentation_mod/e2e_seg2rec.py",
-    "--video",
-    videoPath,
-  ]);
+        "/Users/zzenninkim/Documents/Research/sl-wrapper-main/segmentation_mod/e2e_seg2rec.py",
+        "--video",
+        videoPath,
+      ]);
 
   } else if (req.body.scriptName === "find-a-sign") {
     console.log("start recognition! find-a-sign");
-    const videoPath = req.file.path; // 업로드된 비디오 경로
-    const start = parseFloat(req.body.start); // 선택된 시작 시간
-    const end = parseFloat(req.body.end); // 선택된 종료 시간
+    const videoPath = req.file.path; // uploaded video path
+    const start = parseFloat(req.body.start);
+    const end = parseFloat(req.body.end);
 
     const output_file = path.join(
     path.dirname(videoPath),
@@ -85,23 +126,13 @@ app.post("/process-video", upload.single("video"), (req, res) => {
 
 
     pythonProcess = spawn("python3", [
-      "/Users/zzenninkim/Documents/Research/sl-wrapper-main/recognition_mod/e2e_recognition.py",
+      "/Users/zzenninkim/Documents/Research/sl-wrapper-main/recognition_mod/e2e_recognition_stgcn.py",
       "--input_segtxt", output_file,
       "--video", videoPath]);
 
   } else {
     return res.status(400).json({ error: "Invalid scriptName provided." });
   }
-
-
-
-
-
-  /*
-  * python demo/demo.py
-  * --video_path /Users/zzenninkim/dataset/How2Sign/Video_test_for_analysis/G3FhmHz_7hs_15-10-rgb_front.mp4
-  * --slowdown_factor 1 --save_segments --viz
-  * */
 
 
   // handle python process exit
@@ -124,16 +155,13 @@ app.post("/process-video", upload.single("video"), (req, res) => {
       }else{
         console.log("JSON File Data:", data);
       }
-      res.json(JSON.parse(data)); // 결과 반환
+      res.json(JSON.parse(data)); // return results
     });
 
-    // 임시 파일 삭제
-    /*
-    fs.unlink(videoPath, (err) => {
-      if (err) console.error("Failed to delete uploaded file:", err);
-    });*/
   });
 });
+
+
 // to check the root url
 app.get("/", (req, res) => {
   res.send("Server is running and ready to receive requests!");

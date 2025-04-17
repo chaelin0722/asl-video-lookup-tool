@@ -2,6 +2,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 
+/*
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInAnonymously } from 'firebase/auth';
 import {
@@ -12,9 +13,10 @@ import {
   arrayUnion,
   setDoc,
 } from 'firebase/firestore';
+*/
 
 
-const app = initializeApp({
+/*const app = initializeApp({
   apiKey: "AIzaSyA3P1khZmDH2DOu_V0C5WB3spyE_KcLaco",
   authDomain: "sign-sub-span.firebaseapp.com",
   databaseURL: "https://sign-sub-span-default-rtdb.firebaseio.com",
@@ -23,7 +25,7 @@ const app = initializeApp({
   messagingSenderId: "1088979665664",
   appId: "1:1088979665664:web:83b053709cfbcfbf3da9e5",
   measurementId: "G-15V06ZY6PZ"
-  /* ORIGINAL KEYS< RESTORE WHEN DONE
+  /!* ORIGINAL KEYS< RESTORE WHEN DONE
   apiKey: 'AIzaSyA3P1khZmDH2DOu_V0C5WB3spyE_KcLaco',
   authDomain: 'sign-sub-span.firebaseapp.com',
   databaseURL: 'https://sign-sub-span-default-rtdb.firebaseio.com',
@@ -31,13 +33,15 @@ const app = initializeApp({
   storageBucket: 'sign-sub-span.appspot.com',
   messagingSenderId: '1088979665664',
   appId: '1:1088979665664:web:83b053709cfbcfbf3da9e5',
-  measurementId: 'G-15V06ZY6PZ',*/
-});
+  measurementId: 'G-15V06ZY6PZ',*!/
+});*/
+/*
 
 const auth = getAuth(app);
 const db = getFirestore(app);
 let uid = null,
   loggedIn = false;
+*/
 
   /**
    * Save an action done by a user
@@ -45,7 +49,8 @@ let uid = null,
    * @param {Object} params An object that has the parameters of the action 
    * @returns 
    */
-async function save(action, params = {}) {
+
+/*async function save(action, params = {}) {
   if (!loggedIn) {
     return false;
   }
@@ -68,9 +73,9 @@ async function save(action, params = {}) {
   }
 }
 
-/**
+/!**
  * Creates a new user if it does not exist.
- */
+ *!/
 async function initUser() {
   // https://firebase.google.com/docs/firestore/query-data/get-data#get_a_document
   const docRef = doc(db, 'participants', uid);
@@ -90,13 +95,22 @@ async function initUser() {
       ],
     });
   }
-}
+}*/
 
-Vue.prototype.$saveAction = save;
-
+//Vue.prototype.$saveAction = save;
+Vue.prototype.$saveAction = async function (action, params = {}, event = null) {
+  if (event && typeof event.preventDefault === 'function') {
+    event.preventDefault(); // 기본 동작 방지
+  }
+  console.warn(`saveAction is not implemented: action=${action}`, params);
+  return false;
+};
 /**
  * Signs a user in the system
- */
+ *
+ * /
+
+ /*
 signInAnonymously(auth)
   .then((user) => {
     uid = user.user.uid;
@@ -109,6 +123,7 @@ signInAnonymously(auth)
     console.log(`${error.code}\n${error.message}`);
   });
 
+ */
 Vue.config.productionTip = false;
 
 new Vue({

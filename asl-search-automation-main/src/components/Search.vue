@@ -4,12 +4,12 @@
   <div id="search">
     <h3>Search Results</h3>
     <p v-if="segmentOptions.length > 0" id="summary">
-      Processing done, showing {{ segmentOptions.length }} results between
-      {{ segmentOptions[0].start.toFixed(1) }} - {{ segmentOptions[segmentOptions.length - 1].end.toFixed(1) }}
+      Showing {{ segmentOptions.length }} results between
+      {{ segmentOptions[0].start.toFixed(1) }} and {{ segmentOptions[segmentOptions.length - 1].end.toFixed(1) }} seconds.
     </p>
     <div id="results">
       <div id="dropdown">
-      <label for="segment-select">Select a Segment:</label>
+      <label for="segment-select">Select a Segment:  </label>
       <select id="segment-select" v-model="selectedSegment">
         <option v-for="(segment, index) in segmentOptions" :key="`segment-${index}`" :value="segment">
           {{ `Segment ${index + 1} (${segment.start.toFixed(1)} - ${segment.end.toFixed(1)})` }}
@@ -41,14 +41,14 @@
 
 <script>
 import SearchResult from './SearchResult.vue';
-import signsData from '@/assets/data/signs.json'; // Load signs.json
+import signsData from '@/assets/data/signs_2731_gloss_added.json'; // Load signs.json
 
 export default {
   name: 'Search',
   components: {SearchResult},
   props: {
     currentStep: {type: Number, default: -1},
-    signs: { // JSON 데이터를 받는 props
+    signs: { // get JSON
       type: Array,
       default: () => [],
     },
@@ -70,8 +70,8 @@ export default {
                 startTime: segment[0],
                 endTime: segment[1],
                 sign: prediction[0],
-                confidence: prediction[1],  // confidence 값 확인
-                imgSrc: match ? match.img_src : '', // Default to empty string if no match
+                confidence: prediction[1],
+                imgSrc: match ? match.img_src : '',
                 hands: match ? match.hands : 'Unknown',
                 handshape: match ? match.handshape : 'Unknown',
                 location: match ? match.location : 'Unknown',
@@ -97,6 +97,27 @@ export default {
       );
     },
   },
+  watch: {
+    signs: {
+      handler(newSigns) {
+        // 이전 데이터와 동일하면 리프레시 방지
+        if (JSON.stringify(newSigns) === JSON.stringify(this.previousSigns)) return;
+
+        // 데이터 변경 시에만 갱신
+        this.previousSigns = [...newSigns];
+        this.selectedSegment = this.segmentOptions[0] || null;
+      },
+      immediate: true,
+    },
+    selectedSegment(newSegment, oldSegment) {
+      if (!newSegment || JSON.stringify(newSegment) === JSON.stringify(oldSegment)) {
+        console.log('No change in segment selection');
+        return;
+      }
+      console.log('New segment selected:', newSegment);
+      // Additional logic here
+    },
+  },
   methods: {
     chunkResults(results, size) {
       const chunks = [];
@@ -106,11 +127,13 @@ export default {
       return chunks;
     },
   },
-    mounted() {    // 초기 선택값 설정
-    if (this.segmentOptions.length > 0) {
+    mounted() {
+    if (this.segmentOptions.length > 0 && !this.selectedSegment) {
       this.selectedSegment = this.segmentOptions[0];
     }
   },
+
+
 };
 
 </script>

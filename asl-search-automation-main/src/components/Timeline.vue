@@ -4,7 +4,11 @@
     @mousemove="mouseMove"
     @mouseup="mouseUp"
     @mouseleave="endAllDragging"
+
+    @change-position="onChangePosition"
+    @change="onChangeBoundaries"
   >
+
     <canvas id="bg-canvas" :width="width" :height="height" />
     <div
       id="selection"
@@ -193,6 +197,14 @@ export default {
     },
   },
   methods: {
+    onChangePosition(newPosition) {
+      console.log('New position:', newPosition);
+      // check if prior component occurs refresh
+    },
+    onChangeBoundaries(newBoundaries) {
+      console.log('New boundaries:', newBoundaries);
+      // prevent unnecessary initiate when update status
+    },
     resetSelection: function () {
       this.startX = 0;
       this.endX = 1;
@@ -201,7 +213,7 @@ export default {
     updateFrames(frames) {
       this.frames = frames;
       this.frameCount = frames.length;
-      this.setupBackground(); // 프레임을 다시 렌더링
+      this.setupBackground(); // redering frame again
     },
     updateTickPosition(position) {
       this.position = position; // 현재 비디오 재생 위치를 반영
@@ -255,6 +267,7 @@ export default {
       }
     },
     mouseUp: function (e) {
+      e.preventDefault(); // 기본 동작 방지
       if (
           !this.draggingStart &&
           !this.draggingEnd &&
@@ -280,6 +293,7 @@ export default {
       this.$emit('change', boundaries);
     },
     startDraggingBlock: function (e) {
+      e.preventDefault(); // 기본 동작 방지
       this.initialMouseX = e.clientX;
       this.initialStartX = this.startX;
       this.initialEndX = this.endX;
@@ -287,12 +301,14 @@ export default {
       this.draggingBlock = true;
     },
     startDraggingStart: function (e) {
+      e.preventDefault(); // 기본 동작 방지
       let el = document.getElementById('start');
       let bound = el.getBoundingClientRect();
       this.offsetX = e.clientX - bound.left;
       this.draggingStart = true;
     },
     startDraggingEnd: function (e) {
+      e.preventDefault(); // 기본 동작 방지
       let el = document.getElementById('end');
       let bound = el.getBoundingClientRect();
       this.offsetX = e.clientX - bound.right;
@@ -367,6 +383,7 @@ export default {
 //@import '@/assets/styles/_variables.scss';
 @use "../assets/styles/mixins" as mixins;
 @use "../assets/styles/variables" as *;
+
 #timeline {
   position: relative;
   background-position-y: center;

@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import ParticipantID from '../views/ParticipantID.vue';
 import ScreenCalibration from '../views/ScreenCalibration.vue';
 import ThankYou from '../views/ThankYou.vue';
 
@@ -9,11 +8,6 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: '/',
-    name: 'ParticipantID',
-    component: ParticipantID,
-  },
-  {
-    path: '/screen-calibration',
     name: 'ScreenCalibration',
     component: ScreenCalibration,
   },
