@@ -41,7 +41,8 @@ np.set_printoptions(threshold=10_000)
 video_base_path = "/Users/zzenninkim/dataset/ASL_Citizen/videos/"
 train_file = "/Users/zzenninkim/dataset/ASL_Citizen/splits/train_23.csv"
 test_file = "/Users/zzenninkim/dataset/ASL_Citizen/splits/test_23.csv"
-pretrained_weights = "/work/ckim/SLD-2025/STGCN/ASL_citizen_stgcn_weights.pt"
+#pretrained_weights = "/work/ckim/SLD-2025/STGCN/ASL_citizen_stgcn_weights.pt"
+pretrained_weights = "/Users/zzenninkim/Documents/Research/sl-wrapper-main/recognition_mod/ASL_citizen_stgcn_weights.pt"
 pose_map_videos = "/Users/zzenninkim/dataset/ASL_Citizen/npys/"
 
 
@@ -244,7 +245,7 @@ while epoch < max_epoch:
                     "best_val_score": best_val_score
                 }, model_name)
                 print(f"Model saved at {model_name}")
-                wandb.save(pose_model.state_dict())
+                wandb.save(model_name) # ./ALL_weights/saved_weights_Train_250501_ASLCITIZEN/_training_from_aslcitizen000012_0.048951.pt
 
                 output.write(model_name)
                 output.write('\n')
