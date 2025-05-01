@@ -27,12 +27,10 @@ np.random.seed(0)
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 torch.set_default_dtype(torch.float64)
-device = 'cuda'
+#device = 'cpu'
+device =  torch.device("cpu")
 
 np.set_printoptions(threshold=10_000)
-
-
-
 
 # Update files and paths as needed
 #video_base_path = '/Users/zzenninkim/dataset/ASLLRP/batch_signs_v1_1/'
@@ -40,17 +38,17 @@ np.set_printoptions(threshold=10_000)
 #test_file = "/Users/zzenninkim/dataset/ASLLRP/asllrp_test.csv"
 #pretrained_weights = "/Users/zzenninkim/Documents/Research/sl-wrapper-main/recognition_mod/ASL_citizen_stgcn_weights.pt"
 # pose_map_videos = "/Users/zzenninkim/dataset/ASLLRP/batch_signs_v1_1_pose_files/"
-video_base_path = '/work/ckim/SLD-2025/ASLLRP/batch_signs_v1_1/'
-train_file = "/work/ckim/SLD-2025/ASLLRP/asllrp_asllvd_train_996.csv"
-test_file = "/work/ckim/SLD-2025/ASLLRP/asllrp_asllvd_test_996.csv"
+video_base_path = "/Users/zzenninkim/dataset/ASL_Citizen/videos/"
+train_file = "/Users/zzenninkim/dataset/ASL_Citizen/splits/train_23.csv"
+test_file = "/Users/zzenninkim/dataset/ASL_Citizen/splits/test_23.csv"
 pretrained_weights = "/work/ckim/SLD-2025/STGCN/ASL_citizen_stgcn_weights.pt"
-pose_map_videos = "/work/ckim/SLD-2025/ASLLRP/batch_signs_v1_1_pose_files/"
+pose_map_videos = "/Users/zzenninkim/dataset/ASL_Citizen/npys/"
 
 
 #######################===========
 # WandB
 wandb.init(
-    project="ASLLRP-Training",  # project name
+    project="Check_with_23gloss_MAY1",  # project name
     name=f"STGCN-run-{random.randint(1, 1000)}",  # 실험 이름 (랜덤 ID 추가)
     config={
         "learning_rate": 1e-3,
@@ -59,7 +57,7 @@ wandb.init(
     }
 )
 
-condition_name = "Train_250320_ASLCITIZEN"
+condition_name = "Train_250501_ASLCITIZEN"
 
 # Update names according to experiment number
 save_model = f"./ALL_weights/saved_weights_{condition_name}/"
@@ -126,7 +124,7 @@ ce_loss = torch.nn.CrossEntropyLoss()
 
 # train from pretrained asl model
 if os.path.exists(pretrained_weights):
-    checkpoint = torch.load(pretrained_weights, map_location=device)
+    checkpoint = torch.load(pretrained_weights, map_location=torch.device('cpu'))
 
     # `encoder` weights load
     encoder_state_dict = {k.replace("encoder.", ""): v for k, v in checkpoint.items() if k.startswith("encoder")}
@@ -173,7 +171,13 @@ while epoch < max_epoch:
         for data in tqdm(curr_dataloader):
             num_iter += 1
 
-            inputs, name, labels = data
+            # inputs, name, labels = data
+            inputs = data[0]
+            name = data[1]['gloss']
+            labels = torch.tensor([train_ds.gloss_dict[n] for n in name])
+
+            train_ds.gloss_dict
+
 
             # wrap them in Variable
             inputs = inputs.to(device)
@@ -181,13 +185,13 @@ while epoch < max_epoch:
 
             # pass through model, calculate loss
             outputs = pose_model(inputs)
-            cls_loss = ce_loss(outputs, labels.argmax(dim=1).long())
+            cls_loss = ce_loss(outputs, labels.long())
             tot_cls_loss += cls_loss.data.item()
 
             # calculate number correct
             y_pred_tag = torch.softmax(outputs, dim=1)
             pred_args = torch.argmax(y_pred_tag, dim=1)
-            true_args = torch.argmax(labels, dim=1)
+            true_args = labels
             correct += (pred_args == true_args).sum().float()
             total += labels.shape[0]
 
