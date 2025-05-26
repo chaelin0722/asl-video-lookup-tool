@@ -110,7 +110,6 @@ class ASLLRP(data_utl.Dataset):
             data0 = data0 * scale
 
         # select subset of keypoints for graph
-        ## keypoint 가 어디를 사용하는지 알아봐, face 도 사용하도록!
         keypoints = [0, 2, 5, 11, 12, 13, 14, 33, 37, 38, 41, 42, 45, 46, 49, 50, 53, 54,
                      58, 59, 62, 63, 66, 67, 70, 71, 74]
 
