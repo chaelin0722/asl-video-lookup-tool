@@ -50,7 +50,7 @@ pose_map_videos = "/Users/zzenninkim/dataset/ASL_Citizen/npys/"
 # WandB
 wandb.init(
     project="Check_with_23gloss_MAY1",  # project name
-    name=f"STGCN-run-{random.randint(1, 1000)}",  # 실험 이름 (랜덤 ID 추가)
+    name=f"STGCN-run-{random.randint(1, 1000)}",  # experiment title with random ID
     config={
         "learning_rate": 1e-3,
         "batch_size": 32,
