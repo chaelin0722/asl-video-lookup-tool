@@ -39,9 +39,9 @@ node backend.js
 ```
 
 ## ⚠️ Configuration Notes
-Ensure that you update all absolute paths in the following files to match your local directory structure.
+Make sure that you update all absolute paths in the following files to match your local directory structure.
 
-✅ backend.js:
+✅ asl-search-automation-main/src/backend.js:
 	
  • Line 13: gifFolderPath → Path to the folder where your GIFs are stored
  • Lines 15, 31, 51, 94, 119: Update these to your repository’s absolute path
