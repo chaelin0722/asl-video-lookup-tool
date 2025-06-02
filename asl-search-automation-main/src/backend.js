@@ -9,10 +9,10 @@ const path = require("path");
 const app = express();
 
 // to show local files to local host webpage
-const gifFolderPath = "/Users/zzenninkim/Downloads/gifs/gifs/";
+const gifFolderPath = "path to gifs";
 app.use('/gifs', express.static(gifFolderPath));
 // save webm -> mp4 files to here
-app.use('/tmp', express.static("/Users/zzenninkim/Documents/Research/asl-search-automation-main/src/tmp"));
+app.use('/tmp', express.static("absolute directory to where recorded file created"));
 
 // Enable CORS
 app.use(cors());
@@ -28,7 +28,7 @@ app.use((req, res, next) => {
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "/Users/zzenninkim/Documents/Research/asl-search-automation-main/src/tmp/"); // directory for save files
+    cb(null, "absolute directory to where recorded file created"); // directory for save files
   },
   filename: function (req, file, cb) {
     const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
@@ -48,7 +48,7 @@ const upload = multer({ storage: storage });
 app.post("/convert-video", upload.single("video"), async (req, res) => {
   const inputPath = req.file.path;
   const pythonProcess = spawn("python3", [
-    "/Users/zzenninkim/Documents/Research/sl-wrapper-main/recognition_mod/convert_webm_to_mp4.py",
+    "absolute direcory to/sl-wrapper-main/recognition_mod/convert_webm_to_mp4.py",
     inputPath,
   ]);
 
@@ -61,24 +61,22 @@ app.post("/convert-video", upload.single("video"), async (req, res) => {
   pythonProcess.on("close", (code) => {
     if (code !== 0) {
       return res.status(500).json({ error: "Conversion failed" });
-    }
-    //const cleaned = convertedPath.trim();
-    //res.json({ output_path: `http://localhost:3000/tmp/${cleaned.split('/').pop()}` });
-    res.sendFile(outputPath); // 직접 파일 전송
+    } 
+    res.sendFile(outputPath); 
 
   });
 });
 
 
 
-// 비디오 처리 엔드포인트
+// endpoint for processing video
 app.post("/process-video", upload.single("video"), async (req, res) => {
   if (!req.file) {
     return res.status(400).json({ error: "No video uploaded." });
   }
 
   console.log("File uploaded successfully:", req.file);
-  const videoPath = req.file.path; // 임시 경로에 저장된 파일
+  const videoPath = req.file.path;  
 
 
   // JSON 파일 경로 생성 (같은 tmp 디렉토리에 저장)
@@ -88,20 +86,12 @@ app.post("/process-video", upload.single("video"), async (req, res) => {
   `${path.basename(videoPath, path.extname(videoPath))}.json`
 );
 
-  /*
-  const outputJsonPath = path.join(
-    "results",
-    `${path.basename(req.file.originalname, path.extname(req.file.originalname))}.json`
-  );
-*/
-
-
 
   // Run Python Script
   let pythonProcess;
   if (req.body.scriptName === "submit") {
       pythonProcess = spawn("python3", [
-        "/Users/zzenninkim/Documents/Research/sl-wrapper-main/segmentation_mod/e2e_seg2rec.py",
+        "absolute directory to/sl-wrapper-main/segmentation_mod/e2e_seg2rec.py",
         "--video",
         videoPath,
       ]);
@@ -126,7 +116,7 @@ app.post("/process-video", upload.single("video"), async (req, res) => {
 
 
     pythonProcess = spawn("python3", [
-      "/Users/zzenninkim/Documents/Research/sl-wrapper-main/recognition_mod/e2e_recognition_stgcn.py",
+      "absolute directory to/sl-wrapper-main/recognition_mod/e2e_recognition_stgcn.py",
       "--input_segtxt", output_file,
       "--video", videoPath]);
 
