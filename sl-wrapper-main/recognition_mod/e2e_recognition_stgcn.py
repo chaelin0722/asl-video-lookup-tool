@@ -49,33 +49,14 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 torch.set_default_dtype(torch.float64)
 
-# video_path = "/Users/zzenninkim/Documents/Research/sl-wrapper-main/60085579467325-APPLE.mp4"
-# segment_txt = "/Users/zzenninkim/Documents/Research/sl-wrapper-main/60085579467325-APPLE.txt"
-# video_path = "/Users/zzenninkim/Documents/Research/asl-search-automation-main/src/tmp/video-1738703027185-948488080.mp4"
-# segment_txt = "/Users/zzenninkim/Documents/Research/asl-search-automation-main/src/tmp/video-1738703027185-948488080.txt"
-
-#Update files and paths as needed
-video_base_path = '../data/poses/'
-train_file = '../data_csv/aslcitizen_training_set.csv'
-test_file = '../data_csv/aslcitzen_test_set.csv'
+# video_path = "path to video"
+# segment_txt = "path to segment text file"
+ 
 #Update names according to experiment number
 tag = 'experiment1b'
 dataset_name = "training_full"
 
-device = torch.device("cpu")
-'''
-train_transforms = pose_transforms.Compose([pose_transforms.ShearTransform(0.1),
-                                            pose_transforms.RotatationTransform(0.1)])
-#load data
-train_ds = Dataset(datadir=video_base_path, video_file=train_file, transforms=train_transforms, pose_map_file = "pose_mapping_train.csv")
-test_ds = Dataset(datadir=video_base_path, video_file=test_file, gloss_dict=train_ds.gloss_dict, pose_map_file = "pose_mapping_test.csv")
-n_classes = len(train_ds.gloss_dict)
-
-
-test_loader = torch.utils.data.DataLoader(test_ds, batch_size=1, shuffle=True, num_workers=2, pin_memory=True)
-'''
-
-
+device = torch.device("cpu") 
 
 n_classes = 991
 #load model
@@ -181,7 +162,7 @@ def downsample(frames, max_frames):
 def recognize_segments_in_video(pose_npy_path, segment, fps):
     result_list = [] 
     # asllrp
-    df = pd.read_csv('/Users/zzenninkim/dataset/ASLLRP/asllrp_991_gloss.csv')
+    df = pd.read_csv('absolute path to/asllrp_991_gloss.csv')
     index_to_gloss = dict(zip(df["Index"], df["Gloss"]))
     i = 0
     for start_t, end_t in segment:
