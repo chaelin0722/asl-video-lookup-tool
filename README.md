@@ -65,8 +65,11 @@ const gifFolderPath = "/Users/yourname/Downloads/gifs/gifs/";
 ### 🚀 Features
 
 🎥 Upload or record long ASL videos via the web interface
+
 ✂️ Automatically segment videos into individual signs
+
 🧠 Recognize 991 sign classes using an ST-GCN-based model
+
 🔍 View top gloss predictions for each sign, with matching GIFs for visual reference
 
 
