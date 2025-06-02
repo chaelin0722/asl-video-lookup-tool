@@ -9,8 +9,9 @@ import random
 import torch
 import torch.nn
 import torch.optim as optim
+from collections import Counter
+from torch.utils.data import WeightedRandomSampler
 import numpy as np
-
 from architecture.st_gcn import STGCN
 from architecture.fc import FC
 from architecture.network import Network
@@ -27,30 +28,24 @@ np.random.seed(0)
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 torch.set_default_dtype(torch.float64)
-#device = 'cpu'
-device =  torch.device("cpu")
+device = 'cpu'
+#device =  torch.device("cpu")
+#device =  'cuda'
 
 np.set_printoptions(threshold=10_000)
 
 # Update files and paths as needed
-#video_base_path = '/Users/zzenninkim/dataset/ASLLRP/batch_signs_v1_1/'
-#train_file = "/Users/zzenninkim/dataset/ASLLRP/asllrp_train.csv"
-#test_file = "/Users/zzenninkim/dataset/ASLLRP/asllrp_test.csv"
-#pretrained_weights = "/Users/zzenninkim/Documents/Research/sl-wrapper-main/recognition_mod/ASL_citizen_stgcn_weights.pt"
-# pose_map_videos = "/Users/zzenninkim/dataset/ASLLRP/batch_signs_v1_1_pose_files/"
-video_base_path = "/Users/zzenninkim/dataset/ASL_Citizen/videos/"
-train_file = "/Users/zzenninkim/dataset/ASL_Citizen/splits/train_23.csv"
-test_file = "/Users/zzenninkim/dataset/ASL_Citizen/splits/test_23.csv"
-#pretrained_weights = "/work/ckim/SLD-2025/STGCN/ASL_citizen_stgcn_weights.pt"
-pretrained_weights = "/Users/zzenninkim/Documents/Research/sl-wrapper-main/recognition_mod/ASL_citizen_stgcn_weights.pt"
+video_base_path = "/work/ckim/SLD-2025/ASLCitizen/"
+train_file = "/Users/zzenninkim/dataset/ASL_Citizen/splits/train_21.csv"
+test_file = "/Users/zzenninkim/dataset/ASL_Citizen/splits/test_21.csv"
+pretrained_weights = "/Users/zzenninkim/Documents/Research/sl-wrapper-main/rcdecognition_mod/ASL_citizen_fake_path.pt"
 pose_map_videos = "/Users/zzenninkim/dataset/ASL_Citizen/npys/"
-
 
 #######################===========
 # WandB
 wandb.init(
-    project="Check_with_23gloss_MAY1",  # project name
-    name=f"STGCN-run-{random.randint(1, 1000)}",  # experiment title with random ID
+    project="Check_with_23gloss_MAY24",  # project name
+    name=f"STGCN-run-{random.randint(1, 1000)}",   
     config={
         "learning_rate": 1e-3,
         "batch_size": 32,
@@ -58,7 +53,7 @@ wandb.init(
     }
 )
 
-condition_name = "Train_250501_ASLCITIZEN"
+condition_name = "Train_250530_ASLCITIZEN"
 
 # Update names according to experiment number
 save_model = f"./ALL_weights/saved_weights_{condition_name}/"
@@ -90,9 +85,28 @@ test_ds = Dataset(datadir=video_base_path, video_file=test_file, gloss_dict=trai
                   pose_map_file=pose_map_videos)
 n_classes = len(train_ds.gloss_dict)
 
-train_loader = torch.utils.data.DataLoader(train_ds, batch_size=32, shuffle=True, num_workers=0, pin_memory=True,
+
+# 클래스 인덱스 목록
+label_list = train_ds.labels  # e.g. [2, 1, 1, 3, 0, 1, ...]
+
+class_counts = Counter(label_list)  # 각 클래스의 등장 횟수
+num_classes = len(train_ds.gloss_dict)
+
+# 클래스별 weight = 1 / count (적은 샘플일수록 더 높은 확률로 뽑히게)
+class_weights = {cls: 1.0 / count for cls, count in class_counts.items()}
+
+# 각 샘플에 대응하는 weight 리스트 생성
+sample_weights = [class_weights[label] for label in label_list]
+
+# Weighted sampler 생성
+sampler = WeightedRandomSampler(weights=sample_weights,
+                                 num_samples=len(sample_weights),
+                                 replacement=True)
+
+
+train_loader = torch.utils.data.DataLoader(train_ds, batch_size=24, sampler = sampler, num_workers=0, pin_memory=True,
                                            worker_init_fn=seed_worker, generator=g)
-test_loader = torch.utils.data.DataLoader(test_ds, batch_size=32, shuffle=False, num_workers=0, pin_memory=True,
+test_loader = torch.utils.data.DataLoader(test_ds, batch_size=24, shuffle=False, num_workers=0, pin_memory=True,
                                           drop_last=False, worker_init_fn=seed_worker, generator=g)
 
 # load model
@@ -106,14 +120,13 @@ graph_args = {'num_nodes': 27, 'center': 0,
 stgcn = STGCN(in_channels=2, graph_args=graph_args, edge_importance_weighting=True)
 fc = FC(n_features=n_features, num_class=n_classes, dropout_ratio=0.05)
 pose_model = Network(encoder=stgcn, decoder=fc)
-pose_model.cpu()
+pose_model.cpu() # device()
 
 # init
-lr = 0.1
+lr =1e-3
 max_epoch = 200
-optimizer = optim.SGD(pose_model.parameters(), lr=lr, momentum=0.9, nesterov=True, weight_decay=1e-4)
-#optimizer = optim.Adam(pose_model.parameters(), lr=lr)
-
+#optimizer = optim.SGD(pose_model.parameters(), lr=lr, momentum=0.9, nesterov=True, weight_decay=1e-4)
+optimizer = optim.Adam(pose_model.parameters(), lr=lr)
 num_steps_per_update = 1
 steps = 0
 epoch = 0
@@ -125,7 +138,7 @@ ce_loss = torch.nn.CrossEntropyLoss()
 
 # train from pretrained asl model
 if os.path.exists(pretrained_weights):
-    checkpoint = torch.load(pretrained_weights, map_location=torch.device('cpu'))
+    checkpoint = torch.load(pretrained_weights, map_location=device)
 
     # `encoder` weights load
     encoder_state_dict = {k.replace("encoder.", ""): v for k, v in checkpoint.items() if k.startswith("encoder")}
@@ -172,23 +185,34 @@ while epoch < max_epoch:
         for data in tqdm(curr_dataloader):
             num_iter += 1
 
-            # inputs, name, labels = data
-            inputs = data[0]
-            name = data[1]['gloss']
-            labels = torch.tensor([train_ds.gloss_dict[n] for n in name])
+            inputs, name, labels = data
 
-            train_ds.gloss_dict
+            name = name['gloss']
+            # log
+            with open("./training_debug_log.txt", "a") as f:
+                f.write(f"Epoch {epoch}, Phase: {phase}\n")
+                f.write(f"Name: {name}\n")
+                f.write(f"labels (raw): {labels}\n")
 
+
+
+
+            labels = labels.argmax(dim=-1)
 
             # wrap them in Variable
             inputs = inputs.to(device)
             labels = labels.to(device)
 
+            # log
+            with open("./training_debug_log.txt", "a") as f:
+                f.write(f"Labels.argmax: {labels}\n")
+                f.write(f"Labels.argmax: {labels.argmax(dim=-1)}\n")
+                f.write("-" * 40 + "\n")
+
             # pass through model, calculate loss
             outputs = pose_model(inputs)
-            cls_loss = ce_loss(outputs, labels.long())
+            cls_loss = ce_loss(outputs, labels)
             tot_cls_loss += cls_loss.data.item()
-
             # calculate number correct
             y_pred_tag = torch.softmax(outputs, dim=1)
             pred_args = torch.argmax(y_pred_tag, dim=1)
@@ -224,7 +248,9 @@ while epoch < max_epoch:
             wandb.log({
                 f"phase: {phase}/loss": tot_cls_loss / num_iter,
                 f"phase: {phase}/accuracy": float(correct / total),
-                "epoch": epoch
+                "epoch": epoch,
+                "learning_rate": scheduler.get_last_lr()[0],  # 현재 lr
+                "optimizer": optimizer.__class__.__name__
             })
 
         if phase == 'test':
@@ -232,7 +258,9 @@ while epoch < max_epoch:
 
             wandb.log({
                 f"validation score": val_score,
-                "epoch": epoch
+                "epoch": epoch,
+                "learning_rate": scheduler.get_last_lr()[0],  # 현재 lr
+                "optimizer": optimizer.__class__.__name__
             })
 
             # save best model or on even epochs
