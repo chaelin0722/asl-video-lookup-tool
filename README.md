@@ -27,7 +27,7 @@ conda activate SLD-2025
 ### 2. Run the frontend
 ```
 cd ~ Asl_seg_rec/asl-search-automation-main/src/
-Npm install
+npm install
 npm run build
 npm run serve 
 ```
@@ -39,7 +39,7 @@ node backend.js
 ```
 
 ## ⚠️ Configuration Notes
-Make sure to update all absolute paths in the following files to match your local directory structure.
+Ensure that you update all absolute paths in the following files to match your local directory structure.
 
 ✅ backend.js:
 	
