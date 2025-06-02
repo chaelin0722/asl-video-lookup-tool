@@ -86,7 +86,7 @@ try:
     subprocess.run(
         [
                 "python3",
-                "/Users/zzenninkim/Documents/Research/sl-wrapper-main/recognition_mod/e2e_recognition.py",
+                "/Users/zzenninkim/Documents/Research/sl-wrapper-main/recognition_mod/e2e_recognition_stgcn.py",
                 "--input_segtxt", output_file,
                 "--video", video_path],
 
