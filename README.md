@@ -42,8 +42,9 @@ node backend.js
 Make sure to update all absolute paths in the following files to match your local directory structure.
 
 ✅ backend.js:
-	•	Line 13: gifFolderPath → Path to the folder where your GIFs are stored
-	•	Lines 15, 31, 51, 94, 119: Update these to your repository’s absolute path
+	
+ • Line 13: gifFolderPath → Path to the folder where your GIFs are stored
+ • Lines 15, 31, 51, 94, 119: Update these to your repository’s absolute path
 
 Example:
 
