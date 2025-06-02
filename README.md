@@ -46,20 +46,27 @@ Make sure to update all absolute paths in the following files to match your loca
 	•	Lines 15, 31, 51, 94, 119: Update these to your repository’s absolute path
 
 Example:
+
 ```
 const gifFolderPath = "/Users/yourname/Downloads/gifs/gifs/";
 ```
+
 ✅ sl-wrapper-main/recognition_mod/e2e_recognition_stgcn.py:
-	•	Line 165: Update with your local absolute path
+
+ • Line 165: Update with your local absolute path
+
 
 ✅ sl-wrapper-main/segmentation_mod/e2e_seg2rec.py:
-	•	Lines 29, 40, 41, 84: Update with your local absolute paths
+
+ • Lines 29, 40, 41, 84: Update with your local absolute paths
+
 
 ### 🚀 Features
-	•	🎥 Upload or record long ASL videos via the web interface
-	•	✂️ Automatically segment videos into individual signs
-	•	🧠 Recognize 991 sign classes using an ST-GCN-based model
-	•	🔍 View top gloss predictions for each sign, with matching GIFs for visual reference
+
+🎥 Upload or record long ASL videos via the web interface
+✂️ Automatically segment videos into individual signs
+🧠 Recognize 991 sign classes using an ST-GCN-based model
+🔍 View top gloss predictions for each sign, with matching GIFs for visual reference
 
 
 
