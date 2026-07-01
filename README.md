@@ -1,3 +1,4 @@
+
 # ASL Video Lookup Tool (`asl-video-lookup-tool`)
 
 This project is the official implementation of the system presented at the **ACM ASSETS 2026** conference.
@@ -7,6 +8,8 @@ It is an AI-powered tool that allows users to upload and record a long ASL (Amer
 - Segment the video into individual signs
 - Recognize each sign
 - Return the gloss (English meaning) for each recognized sign
+
+<img width="861" height="377" alt="Overview_UI" src="https://github.com/user-attachments/assets/d885c328-9cc6-412f-a78e-7ea3f5b7f53e" />
 
 
 ## 📂 Project Structure
