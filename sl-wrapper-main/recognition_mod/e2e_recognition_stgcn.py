@@ -49,14 +49,33 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 torch.set_default_dtype(torch.float64)
 
-# video_path = "path to video"
-# segment_txt = "path to segment text file"
- 
+# video_path = "/Users/zzenninkim/Documents/Research/sl-wrapper-main/60085579467325-APPLE.mp4"
+# segment_txt = "/Users/zzenninkim/Documents/Research/sl-wrapper-main/60085579467325-APPLE.txt"
+# video_path = "/Users/zzenninkim/Documents/Research/asl-search-automation-main/src/tmp/video-1738703027185-948488080.mp4"
+# segment_txt = "/Users/zzenninkim/Documents/Research/asl-search-automation-main/src/tmp/video-1738703027185-948488080.txt"
+
+#Update files and paths as needed
+video_base_path = '../data/poses/'
+train_file = '../data_csv/aslcitizen_training_set.csv'
+test_file = '../data_csv/aslcitzen_test_set.csv'
 #Update names according to experiment number
 tag = 'experiment1b'
 dataset_name = "training_full"
 
-device = torch.device("cpu") 
+device = torch.device("cpu")
+'''
+train_transforms = pose_transforms.Compose([pose_transforms.ShearTransform(0.1),
+                                            pose_transforms.RotatationTransform(0.1)])
+#load data
+train_ds = Dataset(datadir=video_base_path, video_file=train_file, transforms=train_transforms, pose_map_file = "pose_mapping_train.csv")
+test_ds = Dataset(datadir=video_base_path, video_file=test_file, gloss_dict=train_ds.gloss_dict, pose_map_file = "pose_mapping_test.csv")
+n_classes = len(train_ds.gloss_dict)
+
+
+test_loader = torch.utils.data.DataLoader(test_ds, batch_size=1, shuffle=True, num_workers=2, pin_memory=True)
+'''
+
+
 
 n_classes = 991
 #load model
@@ -70,20 +89,43 @@ graph_args = {'num_nodes': 27, 'center': 0,
 stgcn = STGCN(in_channels=2, graph_args=graph_args, edge_importance_weighting=True)
 fc = FC(n_features=n_features, num_class=n_classes, dropout_ratio=0.05)
 pose_model = Network(encoder=stgcn, decoder=fc)
-weights_path = "path to weights .pt"
+#default asl pretrained
+#pose_model.load_state_dict(torch.load('/Users/zzenninkim/Documents/Research/ASL-citizen-code-main/ST-GCN/ASL_citizen_stgcn_weights.pt',map_location=torch.device('cpu')))
+# trained weights
+#pose_model.load_state_dict(torch.load('/Users/zzenninkim/dataset/ASLLRP/saved_weights/weights_from_aslcitizen.pt',map_location=torch.device('cpu')))
+# trained weights
+#weights_path = "/Users/zzenninkim/Documents/Research/sl-wrapper-main/recognition_mod/STGCN/ALL_weights/saved_weights_Train_250521_ASLCITIZEN_trial2/_training_from_aslcitizen002772_0.526316.pt"
+#weights_path = "/Users/zzenninkim/Documents/Research/asl-emergency/model/ST-GCN/_training_from_citizen_june02001260_0.795871.pt"
+weights_path = "/Users/zzenninkim/Research/DEMO1/sl-wrapper-main/recognition_mod/STGCN/ALL_weights/_training_from_citizen_june02145024_0.690164.pt"
+'''
+June weights
+_training_from_citizen_june02145024_0.690164.pt
+_training_from_frozenweight_june02331248_0.524208.pt
+_training_from_scratch_june02153264_0.356425.pt
+'''
+
+#checkpoint = torch.load(weights_path, map_location="cpu")
+#model_state_dict = checkpoint["model_state_dict"]
+#pose_model.load_state_dict(model_state_dict)
+
+# pose_model.load_state_dict(torch.load(weights_path,map_location=torch.device('cpu')))
+
+#### original
+# checkpoint = torch.load(weights_path, map_location=torch.device('cpu'))
+# pose_model.load_state_dict(checkpoint["model_state_dict"])
+# pose_model.to(device)
+####
 
 checkpoint = torch.load(weights_path, map_location=torch.device('cpu'))
 pose_model.load_state_dict(checkpoint["model_state_dict"])
 pose_model.to(device)
+
 
 pose_model.train(False)  # Set model to evaluate mode
 
 
 def extract_landmarks(video_path):
     f = video_path
-
-    name = os.path.basename(video_path).split('.')[0]
-    dst_path = os.path.splitext(video_path)[0]
 
     with mp_holistic.Holistic(
             static_image_mode=False, min_detection_confidence=0.5) as holistic:
@@ -143,9 +185,9 @@ def read_time_segments(file_path):
 def downsample(frames, max_frames):
     length = frames.shape[0]
     # Adjust FPS dynamically based on length of video
-    increment = max_frames / length  # define increase rate according to # of frames
+    increment = max_frames / length  # determine increment based on number of frames
     if increment > 1.0:
-        increment = 1.0  
+        increment = 1.0  # if already less than max_frames, keep it
     curr_increment = 0
     curr_frame = 0
     new_frames = []
@@ -155,18 +197,20 @@ def downsample(frames, max_frames):
             curr_frame += 1
             new_frames.append(f)
     if len(new_frames) > max_frames:
-        new_frames = new_frames[:max_frames]  # cut! when exceeds 128 frames
+        new_frames = new_frames[:max_frames]  # cut off if 128 frames exceed
     return np.array(new_frames)
 
 
 def recognize_segments_in_video(pose_npy_path, segment, fps):
-    result_list = [] 
+    result_list = []
+    # asl citizen
+    #df = pd.read_csv('/Users/zzenninkim/Research/sl-wrapper-main/recognition_mod/output_gloss.csv')
     # asllrp
-    df = pd.read_csv('absolute path to/asllrp_991_gloss.csv')
+    df = pd.read_csv('/Users/zzenninkim/dataset/ASLLRP/asllrp_991_gloss.csv')
     index_to_gloss = dict(zip(df["Index"], df["Gloss"]))
-    i = 0
+    cnt = 0
     for start_t, end_t in segment:
-        print(f"segment{i}, processing")
+        print(f"segment{cnt}, processing")
         start_frame = int(start_t * fps)
         end_frame = int(end_t * fps)
         print("start and end frame:", start_frame, end_frame)
@@ -174,72 +218,70 @@ def recognize_segments_in_video(pose_npy_path, segment, fps):
         pose_data = np.load(pose_npy_path)
 
         # (T, C, V) → (T', C, V)
-        segmented_pose_data = pose_data[start_frame:end_frame+1, :, :]  # use segmented frames only 
+        segmented_pose_data = pose_data[start_frame:end_frame+1, :, :]  # use only selected frames
         length = segmented_pose_data.shape[0]
 
         #segmented_pose_data = pose_data
         #length = segmented_pose_data.shape[0]
 
         if length > 128:
-            segmented_pose_data = downsample(segmented_pose_data, 128)  # if it exceeds 128 frames, downsample
+            segmented_pose_data = downsample(segmented_pose_data, 128)  # cut off if 128 frames exceed
         if length < 128:
-            segmented_pose_data = np.pad(segmented_pose_data, ((0, 128 - length), (0, 0), (0, 0)))  # if it smaller than 128 frames, 0 padding
+            segmented_pose_data = np.pad(segmented_pose_data, ((0, 128 - length), (0, 0), (0, 0)))  # pad if less than 128 frames
 
 
         shoulder_l = segmented_pose_data[:, 11, :]
         shoulder_r = segmented_pose_data[:, 12, :]
 
-    center = np.zeros(2)
-    for i in range(len(shoulder_l)):
-        center_i = (shoulder_r[i] + shoulder_l[i]) / 2
-        center = center + center_i
-    center = center / shoulder_l.shape[0]
+        center = np.zeros(2)
+        for i in range(len(shoulder_l)):
+            center_i = (shoulder_r[i] + shoulder_l[i]) / 2
+            center = center + center_i
+        center = center / shoulder_l.shape[0]
 
-    mean_dist = np.mean(np.sqrt(((shoulder_l - shoulder_r) ** 2).sum(-1)))
-    if mean_dist != 0:
-        scale = 1.0 / mean_dist
-        segmented_pose_data  = segmented_pose_data  - center
-        segmented_pose_data  = segmented_pose_data  * scale
-
-
-
-    # use keypoints that used while in training
-    keypoints = [0, 2, 5, 11, 12, 13, 14, 33, 37, 38, 41, 42, 45, 46,
-                 49, 50, 53, 54, 58, 59, 62, 63, 66, 67, 70, 71, 74]
-    #
-    segmented_pose_data = segmented_pose_data[:, 0:75, :]
-    posedata = segmented_pose_data[:, 0:33, :]  # body 33
-    lhdata = segmented_pose_data[:, 54:, :]  # lefthand
-    rhdata = segmented_pose_data[:, 33:54, :]  # righthand
+        mean_dist = np.mean(np.sqrt(((shoulder_l - shoulder_r) ** 2).sum(-1)))
+        if mean_dist != 0:
+            scale = 1.0 / mean_dist
+            segmented_pose_data  = segmented_pose_data  - center
+            segmented_pose_data  = segmented_pose_data  * scale
 
 
+        keypoints = [0, 2, 5, 11, 12, 13, 14, 33, 37, 38, 41, 42, 45, 46,
+                    49, 50, 53, 54, 58, 59, 62, 63, 66, 67, 70, 71, 74]
 
-    data = np.concatenate([posedata, lhdata, rhdata], axis=1)
-    data = data[:, keypoints, :]
-    data = np.transpose(data, (2, 0, 1))  # (T, V, C) → (C, T, V)  xy, frames, num of landmarks
+        segmented_pose_data = segmented_pose_data[:, 0:75, :]
+        posedata = segmented_pose_data[:, 0:33, :]  #
+        lhdata = segmented_pose_data[:, 54:, :]  #
+        rhdata = segmented_pose_data[:, 33:54, :]  #
+
+        data = np.concatenate([posedata, lhdata, rhdata], axis=1)
+        data = data[:, keypoints, :]
+        data = np.transpose(data, (2, 0, 1))  # (T, V, C) → (C, T, V)  xy, frames, num of landmarks
+        #segmented_pose_data = segmented_pose_data[:, :, keypoints_idx]  # (C, T, V) → (C, T, 27)
 
 
-    # change to tensor
-    inputs = torch.from_numpy(data).double()
-    inputs = inputs.unsqueeze(0)  # (C, T, V) → (1, C, T, V)
+        # change to tensor
+        inputs = torch.from_numpy(data).double()
+        inputs = inputs.unsqueeze(0)  # (C, T, V) → (1, C, T, V)
 
-    # inputs.shape == (N, C, T, V)  # (batch, channels, frames, keypoints)
-    predictions = pose_model(inputs)
+        # inputs.shape == (N, C, T, V)  # (batch, channels, frames, keypoints)
+        predictions = pose_model(inputs)
 
-    y_pred_tag = torch.softmax(predictions, dim=1)
-    # check = torch.argsort(predictions, dim=1, descending=True)
-    pred_args = torch.argsort(y_pred_tag, dim=1, descending=True)
+        y_pred_tag = torch.softmax(predictions, dim=1)
+        # check = torch.argsort(predictions, dim=1, descending=True)
+        pred_args = torch.argsort(y_pred_tag, dim=1, descending=True)
 
-    # bring top 20 results
-    top_20_preds = pred_args[0][:20].tolist()
-    top_20_confidences = y_pred_tag[0][pred_args[0][:20]].tolist()
+        # bring top 20 results
+        top_20_preds = pred_args[0][:20].tolist()
+        top_20_confidences = y_pred_tag[0][pred_args[0][:20]].tolist()
 
-    # Gloss mapping
-    mapped_labels = [index_to_gloss[idx] for idx in top_20_preds]
-    gloss_pred = [[word, score] for word, score in zip(mapped_labels, top_20_confidences)]
-    #print("top 20 results: ", top_20_preds, ",", mapped_labels)
-    #result_list.append((start_t, end_t, gloss_pred)) # original
-    result_list.append(gloss_pred)
+        # Gloss mapping
+        mapped_labels = [index_to_gloss[idx] for idx in top_20_preds]
+        gloss_pred = [[word, score] for word, score in zip(mapped_labels, top_20_confidences)]
+        #print("top 20 results: ", top_20_preds, ",", mapped_labels)
+        result_list.append((start_t, end_t, gloss_pred)) # original
+        #result_list.append(gloss_pred)
+        cnt += 1
 
 
     return result_list
@@ -251,8 +293,8 @@ def convert_to_mp4(video_path):
     """
     output_mp4 = os.path.splitext(video_path)[0] + ".mp4"
 
-    # if it is recorded video (webm format), change to mp4 format
-    if video_path.lower().endswith(".webm"):
+    # if WebM file, convert to mp4
+    if not video_path.lower().endswith(".mp4"):
         print(f"Converting {video_path} to {output_mp4}...")
         command = [
             "ffmpeg", "-i", video_path, "-c:v", "libx264", "-preset", "fast",
@@ -272,22 +314,51 @@ def get_args():
 
     return parser.parse_args()
 
-# main 
+# main
 if __name__ == "__main__":
     args = get_args()
     video_path = args.video
     segment_txt = args.input_segtxt
-    #video_path = "path to video file"
-    #segment_txt = "path to segmentation file"
+
+    #video_path = "/Users/zzenninkim/dataset/sign_stream/ALL_data/Cory_2013-6-25_sc0106/2013-06-25_CB_0106-cam1-for-ss3.mp4"
+    #segment_txt = "/Users/zzenninkim/dataset/sign_stream/ALL_data/Cory_2013-6-25_sc0106/2013-06-25_CB_0106-cam1-for-ss3.txt"
+    # first check, if json file already exists
+    # example file name: demo-6.4-9.0-1-2-Voice-Identity_39-58.txt
+    overlap_file = video_path.split(".mp4")[0] + ".json"
+
+    if os.path.exists(overlap_file):
+        print(f"JSON file already exists: {overlap_file}")
+        print("DONE")
+        exit()
+    ####
 
     video_path = convert_to_mp4(video_path)
 
     vidcap = cv2.VideoCapture(video_path)
+    #fps = vidcap.get(cv2.CAP_PROP_FPS)
     probe = ffmpeg.probe(video_path)
-    fps = eval(probe['streams'][0]['r_frame_rate'])
-
+    
+    # Safe FPS extraction with fallback
+    try:
+        r_frame_rate = probe['streams'][0]['r_frame_rate']
+        if '/' in r_frame_rate:
+            numerator, denominator = r_frame_rate.split('/')
+            if int(denominator) != 0:
+                fps = int(numerator) / int(denominator)
+            else:
+                fps = 30.0  # fallback FPS
+        else:
+            fps = float(r_frame_rate)
+    except (KeyError, ValueError, ZeroDivisionError):
+        # Fallback to OpenCV if FFmpeg fails
+        fps = vidcap.get(cv2.CAP_PROP_FPS)
+        if fps <= 0:
+            fps = 30.0  # default FPS if all else fails
+    
+    print("fps: ", fps)
     # bring info from segments
     segments = read_time_segments(segment_txt)
+
     pose_npy_path = extract_landmarks(video_path)
 
     # sign recognition for each segments
@@ -302,10 +373,11 @@ if __name__ == "__main__":
     print(f"Processing time for {segment_txt}: {processing_time:.2f} seconds")
     weights_name = weights_path.split("/")[-1]
     # JSON results
-    output_json_path = os.path.join(segment_txt.split(".")[0]+".json")
+    output_json_path = os.path.join(segment_txt.split(".txt")[0]+".json")
     with open(output_json_path, 'w', encoding='utf-8') as json_file:
         json.dump(recognition_results, json_file, ensure_ascii=False, indent=4)
 
     print(f"Results saved to {output_json_path}")
     print(recognition_results)
+    print("DONE")  # backend waits for this message
 
