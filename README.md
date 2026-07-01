@@ -30,7 +30,7 @@ conda activate SLD-2025
 
 ### 2. Run the frontend
 ```
-cd ~ Asl_seg_rec/asl-search-automation-main/src/
+cd ~ asl-video-lookup-tool/asl-search-automation-main/src/
 npm install
 npm run build
 npm run serve 
@@ -38,7 +38,7 @@ npm run serve
 
 ### 3. Run the backend
 ```
-cd ~ Asl_seg_rec/asl-search-automation-main/src/
+cd ~ asl-video-lookup-tool/asl-search-automation-main/src/
 node backend.js
 ```
 
