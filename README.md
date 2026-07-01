@@ -1,7 +1,8 @@
-# ASL Segmentation & Recognition Automation
+# ASL Video Lookup Tool (`asl-video-lookup-tool`)
 
-This project is an AI-powered sign language dictionary tool.  
-It allows users to upload and record a long ASL (American Sign Language) video and automatically:
+This project is the official implementation of the system presented at the **ACM ASSETS 2026** conference.
+
+It is an AI-powered tool that allows users to upload and record a long ASL (American Sign Language) video and automatically:
 
 - Segment the video into individual signs
 - Recognize each sign
@@ -71,6 +72,26 @@ const gifFolderPath = "/Users/yourname/Downloads/gifs/gifs/";
 🧠 Recognize 991 sign classes using an ST-GCN-based model
 
 🔍 View top gloss predictions for each sign, with matching GIFs for visual reference
+
+
+
+## 📝 Publication & Citation
+
+If you use this tool, the dataset, or the underlying methodology in your research, please cite our paper:
+
+> **Design and Evaluation of an AI-Based American Sign Language Video Comprehension Tool: Exploring the Benefits and Use of Automatic Segmentation and Sign Lookup** > Chaelin Kim, Denise Crochet, Maty Bohacek, and Saad Hassan. 2026. In *Proceedings of the 28th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS ’26)*. Association for Computing Machinery, New York, NY, USA.
+
+### BibTeX
+```bibtex
+@inproceedings{kim2026design,
+  author    = {Kim, Chaelin and Crochet, Denise and Bohacek, Maty and Hassan, Saad},
+  title     = {Design and Evaluation of an AI-Based American Sign Language Video Comprehension Tool: Exploring the Benefits and Use of Automatic Segmentation and Sign Lookup},
+  booktitle = {Proceedings of the 28th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '26)},
+  year      = {2026},
+  location  = {Porto, Portugal},
+  publisher = {ACM},
+  address   = {New York, NY, USA}
+}
 
 
 
