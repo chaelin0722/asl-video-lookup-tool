@@ -49,10 +49,6 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 torch.set_default_dtype(torch.float64)
 
-# video_path = "/Users/zzenninkim/Documents/Research/sl-wrapper-main/60085579467325-APPLE.mp4"
-# segment_txt = "/Users/zzenninkim/Documents/Research/sl-wrapper-main/60085579467325-APPLE.txt"
-# video_path = "/Users/zzenninkim/Documents/Research/asl-search-automation-main/src/tmp/video-1738703027185-948488080.mp4"
-# segment_txt = "/Users/zzenninkim/Documents/Research/asl-search-automation-main/src/tmp/video-1738703027185-948488080.txt"
 
 #Update files and paths as needed
 video_base_path = '../data/poses/'
@@ -88,21 +84,8 @@ graph_args = {'num_nodes': 27, 'center': 0,
                                [17, 21], [21, 22], [17, 23], [23, 24], [17, 25], [25, 26]]}
 stgcn = STGCN(in_channels=2, graph_args=graph_args, edge_importance_weighting=True)
 fc = FC(n_features=n_features, num_class=n_classes, dropout_ratio=0.05)
-pose_model = Network(encoder=stgcn, decoder=fc)
-#default asl pretrained
-#pose_model.load_state_dict(torch.load('/Users/zzenninkim/Documents/Research/ASL-citizen-code-main/ST-GCN/ASL_citizen_stgcn_weights.pt',map_location=torch.device('cpu')))
-# trained weights
-#pose_model.load_state_dict(torch.load('/Users/zzenninkim/dataset/ASLLRP/saved_weights/weights_from_aslcitizen.pt',map_location=torch.device('cpu')))
-# trained weights
-#weights_path = "/Users/zzenninkim/Documents/Research/sl-wrapper-main/recognition_mod/STGCN/ALL_weights/saved_weights_Train_250521_ASLCITIZEN_trial2/_training_from_aslcitizen002772_0.526316.pt"
-#weights_path = "/Users/zzenninkim/Documents/Research/asl-emergency/model/ST-GCN/_training_from_citizen_june02001260_0.795871.pt"
-weights_path = "/Users/zzenninkim/Research/DEMO1/sl-wrapper-main/recognition_mod/STGCN/ALL_weights/_training_from_citizen_june02145024_0.690164.pt"
-'''
-June weights
-_training_from_citizen_june02145024_0.690164.pt
-_training_from_frozenweight_june02331248_0.524208.pt
-_training_from_scratch_june02153264_0.356425.pt
-'''
+pose_model = Network(encoder=stgcn, decoder=fc) 
+weights_path = "/sl-wrapper-main/recognition_mod/STGCN/ALL_weights/_training_from_citizen_june02145024_0.690164.pt" 
 
 #checkpoint = torch.load(weights_path, map_location="cpu")
 #model_state_dict = checkpoint["model_state_dict"]
@@ -319,11 +302,7 @@ if __name__ == "__main__":
     args = get_args()
     video_path = args.video
     segment_txt = args.input_segtxt
-
-    #video_path = "/Users/zzenninkim/dataset/sign_stream/ALL_data/Cory_2013-6-25_sc0106/2013-06-25_CB_0106-cam1-for-ss3.mp4"
-    #segment_txt = "/Users/zzenninkim/dataset/sign_stream/ALL_data/Cory_2013-6-25_sc0106/2013-06-25_CB_0106-cam1-for-ss3.txt"
-    # first check, if json file already exists
-    # example file name: demo-6.4-9.0-1-2-Voice-Identity_39-58.txt
+ 
     overlap_file = video_path.split(".mp4")[0] + ".json"
 
     if os.path.exists(overlap_file):
