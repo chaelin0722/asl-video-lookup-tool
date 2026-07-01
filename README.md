@@ -65,6 +65,14 @@ const gifFolderPath = "/Users/yourname/Downloads/gifs/gifs/";
 
  • Lines 29, 40, 41, 84: Update with your local absolute paths
 
+## Pretrained Weights
+
+1. Download the pretrained weights from [Google Drive](https://drive.google.com/file/d/1CXX6YrH3sJvxLaUMg-KCjUZCTsvcABfY/view?usp=sharing).
+2. Place the downloaded file into the following directory:
+   ```bash
+   ./recognition_mod/STGCN/ALL_weights/
+	```
+
 
 ### 🚀 Features
 
@@ -82,7 +90,8 @@ const gifFolderPath = "/Users/yourname/Downloads/gifs/gifs/";
 
 If you use this tool, the dataset, or the underlying methodology in your research, please cite our paper:
 
-> **Design and Evaluation of an AI-Based American Sign Language Video Comprehension Tool: Exploring the Benefits and Use of Automatic Segmentation and Sign Lookup** > Chaelin Kim, Denise Crochet, Maty Bohacek, and Saad Hassan. 2026. In *Proceedings of the 28th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS ’26)*. Association for Computing Machinery, New York, NY, USA.
+> **Design and Evaluation of an AI-Based American Sign Language Video Comprehension Tool: Exploring the Benefits and Use of Automatic Segmentation and Sign Lookup**
+> Chaelin Kim, Denise Crochet, Maty Bohacek, and Saad Hassan. 2026. In *Proceedings of the 28th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS ’26)*. Association for Computing Machinery, New York, NY, USA.
 
 ### BibTeX
 ```bibtex
