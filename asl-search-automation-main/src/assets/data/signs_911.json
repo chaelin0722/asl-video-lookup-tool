@@ -1,0 +1,7932 @@
+{
+  "signs": [
+    {
+      "img_src": "/gifs/ABANDON.gif",
+      "sign": "ABANDON",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ABOUT.gif",
+      "sign": "ABOUT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ABOVE.gif",
+      "sign": "ABOVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ACCEPT.gif",
+      "sign": "ACCEPT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ACCIDENT.gif",
+      "sign": "ACCIDENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ACT.gif",
+      "sign": "ACT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ACTAGENT.gif",
+      "sign": "ACT AGENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ACTION.gif",
+      "sign": "ACTION",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ADDICTED.gif",
+      "sign": "ADDICTED",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ADMIT.gif",
+      "sign": "ADMIT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ADULTTALL.gif",
+      "sign": "ADULTTALL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ADVISE_INFLUENCE.gif",
+      "sign": "ADVISE/INFLUENCE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ADVISE_INFLUENCEAGENT.gif",
+      "sign": "ADVISE/INFLUENCE AGENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/AFRAID.gif",
+      "sign": "AFRAID",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/AFTERNOON3.gif",
+      "sign": "AFTERNOON3",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/AGAIN.gif",
+      "sign": "AGAIN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/AGAINST.gif",
+      "sign": "AGAINST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/AGENT.gif",
+      "sign": "AGENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/AGREE.gif",
+      "sign": "AGREE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/AIRPLANE.gif",
+      "sign": "AIRPLANE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ALARM.gif",
+      "sign": "ALARM",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ALCOHOL.gif",
+      "sign": "ALCOHOL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ALEVELABOVE.gif",
+      "sign": "ALEVELABOVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ALL.gif",
+      "sign": "ALL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ALLDAY.gif",
+      "sign": "ALLDAY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ALLERGY.gif",
+      "sign": "ALLERGY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ALLNIGHT.gif",
+      "sign": "ALLNIGHT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ALLOW.gif",
+      "sign": "ALLOW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ALMOST.gif",
+      "sign": "ALMOST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ALONE.gif",
+      "sign": "ALONE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ALOT.gif",
+      "sign": "A LOT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ALSO.gif",
+      "sign": "ALSO",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ALWAYS.gif",
+      "sign": "ALWAYS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/AMONG.gif",
+      "sign": "AMONG",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ANALYZE.gif",
+      "sign": "ANALYZE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/AND.gif",
+      "sign": "AND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ANGRY.gif",
+      "sign": "ANGRY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ANIMAL.gif",
+      "sign": "ANIMAL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ANNOUNCE.gif",
+      "sign": "ANNOUNCE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ANSWER.gif",
+      "sign": "ANSWER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ANSWERAGENT.gif",
+      "sign": "ANSWER AGENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ANY.gif",
+      "sign": "ANY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ANYTHING.gif",
+      "sign": "ANYTHING",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ANYWAY_NOTMATTER.gif",
+      "sign": "ANYWAY/NOTMATTER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/APPLAUSE.gif",
+      "sign": "APPLAUSE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/APPLE.gif",
+      "sign": "APPLE",
+      "handshape": "",
+      "hands": 1.0,
+      "movement": "repeated",
+      "location": "at cheek"
+    },
+    {
+      "img_src": "/gifs/APPLY.gif",
+      "sign": "APPLY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/APPOINTMENT.gif",
+      "sign": "APPOINTMENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/AREA.gif",
+      "sign": "AREA",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ARGUE.gif",
+      "sign": "ARGUE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/AROUND.gif",
+      "sign": "AROUND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ARRIVE.gif",
+      "sign": "ARRIVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ARTICLE.gif",
+      "sign": "ARTICLE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ASK.gif",
+      "sign": "ASK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ASSAULT.gif",
+      "sign": "ASSAULT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ATTEMPT.gif",
+      "sign": "ATTEMPT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ATTENTIONWAVE.gif",
+      "sign": "ATTENTIONWAVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/AUDIENCE.gif",
+      "sign": "AUDIENCE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/AUDIOLOGYAGENT.gif",
+      "sign": "AUDIOLOGY AGENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/AUNT.gif",
+      "sign": "AUNT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/AUTUMN.gif",
+      "sign": "AUTUMN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/AVERAGE.gif",
+      "sign": "AVERAGE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/AWKWARD.gif",
+      "sign": "AWKWARD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BABY.gif",
+      "sign": "BABY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BACK.gif",
+      "sign": "BACK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BAD.gif",
+      "sign": "BAD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BAKE_OVEN.gif",
+      "sign": "BAKE/OVEN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BAKINGSPRINKLES.gif",
+      "sign": "BAKINGSPRINKLES",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BALANCE.gif",
+      "sign": "BALANCE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BALD.gif",
+      "sign": "BALD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BASEBALL.gif",
+      "sign": "BASEBALL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BASKETBALL.gif",
+      "sign": "BASKETBALL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BAWLOUT.gif",
+      "sign": "BAWLOUT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BBQ.gif",
+      "sign": "BBQ",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BEAR.gif",
+      "sign": "BEAR",
+      "handshape": "",
+      "hands": 2.0,
+      "movement": "repeated",
+      "location": "torso"
+    },
+    {
+      "img_src": "/gifs/BEAT.gif",
+      "sign": "BEAT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BEAUTIFUL.gif",
+      "sign": "BEAUTIFUL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BECAUSE.gif",
+      "sign": "BECAUSE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BECOME.gif",
+      "sign": "BECOME",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BED.gif",
+      "sign": "BED",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BEFORE.gif",
+      "sign": "BEFORE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BEHAVIOR.gif",
+      "sign": "BEHAVIOR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BEHIND.gif",
+      "sign": "BEHIND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BELIEVE.gif",
+      "sign": "BELIEVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BELONG.gif",
+      "sign": "BELONG",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BELOW2.gif",
+      "sign": "BELOW2",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BERRY.gif",
+      "sign": "BERRY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BESTFRIEND.gif",
+      "sign": "BESTFRIEND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BETTER.gif",
+      "sign": "BETTER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BETWEEN_SHARE.gif",
+      "sign": "BETWEEN/SHARE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BICYCLE.gif",
+      "sign": "BICYCLE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BIG.gif",
+      "sign": "BIG",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BILL_OWE.gif",
+      "sign": "BILL/OWE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BIRD.gif",
+      "sign": "BIRD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BIRTHDAY.gif",
+      "sign": "BIRTHDAY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BIRTHDAY3.gif",
+      "sign": "BIRTHDAY3",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BLACK.gif",
+      "sign": "BLACK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BLAME.gif",
+      "sign": "BLAME",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BLANKOUT.gif",
+      "sign": "BLANKOUT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BLUE.gif",
+      "sign": "BLUE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BLUEBERRY.gif",
+      "sign": "BLUEBERRY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BOAT.gif",
+      "sign": "BOAT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BODY.gif",
+      "sign": "BODY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BOMB.gif",
+      "sign": "BOMB",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BOOK.gif",
+      "sign": "BOOK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BOOKPAGE.gif",
+      "sign": "BOOK PAGE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BORE.gif",
+      "sign": "BORE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BORN.gif",
+      "sign": "BORN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BOSS.gif",
+      "sign": "BOSS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BOTH.gif",
+      "sign": "BOTH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BOTHER.gif",
+      "sign": "BOTHER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BOX_ROOM.gif",
+      "sign": "BOX/ROOM",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BOY.gif",
+      "sign": "BOY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BRACELET.gif",
+      "sign": "BRACELET",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BRAVE_RECOVER.gif",
+      "sign": "BRAVE/RECOVER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BREAK.gif",
+      "sign": "BREAK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BREAKDOWN.gif",
+      "sign": "BREAK DOWN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BREATHE.gif",
+      "sign": "BREATHE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BRING_CARRY.gif",
+      "sign": "BRING/CARRY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BROTHER.gif",
+      "sign": "BROTHER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BUILD.gif",
+      "sign": "BUILD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BUSY_BUSINESS.gif",
+      "sign": "BUSY/BUSINESS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BUT.gif",
+      "sign": "BUT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BUTTER.gif",
+      "sign": "BUTTER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/BUY.gif",
+      "sign": "BUY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CAFETERIA.gif",
+      "sign": "CAFETERIA",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CALLBYPHONE.gif",
+      "sign": "CALLBYPHONE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CALLONRELAY_VRS.gif",
+      "sign": "CALLONRELAY/VRS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CAMP.gif",
+      "sign": "CAMP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CAN.gif",
+      "sign": "CAN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CANCEL_CRITICIZE.gif",
+      "sign": "CANCEL/CRITICIZE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CANNOT.gif",
+      "sign": "CANNOT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CAR.gif",
+      "sign": "CAR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CARE.gif",
+      "sign": "CARE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CAT.gif",
+      "sign": "CAT",
+      "handshape": "",
+      "hands": 2.0,
+      "movement": "repeated",
+      "location": "face"
+    },
+    {
+      "img_src": "/gifs/CAUSE.gif",
+      "sign": "CAUSE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CELEBRATE.gif",
+      "sign": "CELEBRATE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CENTER.gif",
+      "sign": "CENTER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CHALLENGE.gif",
+      "sign": "CHALLENGE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CHANGE.gif",
+      "sign": "CHANGE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CHAPTER.gif",
+      "sign": "CHAPTER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CHARACTER.gif",
+      "sign": "CHARACTER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CHASE.gif",
+      "sign": "CHASE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CHAT.gif",
+      "sign": "CHAT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CHEAP.gif",
+      "sign": "CHEAP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CHECK.gif",
+      "sign": "CHECK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CHEESE.gif",
+      "sign": "CHEESE",
+      "handshape": "",
+      "hands": 2.0,
+      "movement": "repeated",
+      "location": "in space"
+    },
+    {
+      "img_src": "/gifs/CHILD.gif",
+      "sign": "CHILD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CHOCOLATE.gif",
+      "sign": "CHOCOLATE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CHOOSE.gif",
+      "sign": "CHOOSE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CHRISTMAS.gif",
+      "sign": "CHRISTMAS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CHURCH.gif",
+      "sign": "CHURCH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CITY_COMMUNITY.gif",
+      "sign": "CITY/COMMUNITY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CLASS.gif",
+      "sign": "CLASS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CLASS2BOX_ROOM.gif",
+      "sign": "CLASS2BOX/ROOM",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CLEAR.gif",
+      "sign": "CLEAR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CLEVER.gif",
+      "sign": "CLEVER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CLOSEDOOR.gif",
+      "sign": "CLOSEDOOR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COAT.gif",
+      "sign": "COAT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COLD.gif",
+      "sign": "COLD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COLLAR.gif",
+      "sign": "COLLAR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COLLEGE.gif",
+      "sign": "COLLEGE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COLOR.gif",
+      "sign": "COLOR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COME.gif",
+      "sign": "COME",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COMEON.gif",
+      "sign": "COMEON",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COMMUNICATE.gif",
+      "sign": "COMMUNICATE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COMMUTE.gif",
+      "sign": "COMMUTE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COMPARE.gif",
+      "sign": "COMPARE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COMPETITION.gif",
+      "sign": "COMPETITION",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COMPUTER.gif",
+      "sign": "COMPUTER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COMPUTER5.gif",
+      "sign": "COMPUTER5",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CONCEPT.gif",
+      "sign": "CONCEPT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CONFIDENT.gif",
+      "sign": "CONFIDENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CONFLICT_INTERSECTION.gif",
+      "sign": "CONFLICT/INTERSECTION",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CONFRONT.gif",
+      "sign": "CONFRONT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CONTACT.gif",
+      "sign": "CONTACT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CONTINUE.gif",
+      "sign": "CONTINUE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COOK_KITCHEN.gif",
+      "sign": "COOK/KITCHEN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COOKIE.gif",
+      "sign": "COOKIE",
+      "handshape": "",
+      "hands": 2.0,
+      "movement": "repeated",
+      "location": "in space "
+    },
+    {
+      "img_src": "/gifs/COOL.gif",
+      "sign": "COOL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COOPERATE_UNITE.gif",
+      "sign": "COOPERATE/UNITE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COP.gif",
+      "sign": "COP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CORRECT.gif",
+      "sign": "CORRECT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COUGH.gif",
+      "sign": "COUGH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COUNTRY.gif",
+      "sign": "COUNTRY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COURSE.gif",
+      "sign": "COURSE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COURT.gif",
+      "sign": "COURT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COUSIN.gif",
+      "sign": "COUSIN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/COW.gif",
+      "sign": "COW",
+      "handshape": "",
+      "hands": 2.0,
+      "movement": "uni",
+      "location": "head"
+    },
+    {
+      "img_src": "/gifs/CRACK.gif",
+      "sign": "CRACK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CRASH.gif",
+      "sign": "CRASH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CRAZY.gif",
+      "sign": "CRAZY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CREATE_PRETEND.gif",
+      "sign": "CREATE/PRETEND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CROWDED.gif",
+      "sign": "CROWDED",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CRY.gif",
+      "sign": "CRY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CULTURE.gif",
+      "sign": "CULTURE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CUP.gif",
+      "sign": "CUP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/CURIOUS.gif",
+      "sign": "CURIOUS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DANCE.gif",
+      "sign": "DANCE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DANGER.gif",
+      "sign": "DANGER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DATE_DESSERT.gif",
+      "sign": "DATE/DESSERT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DAUGHTER.gif",
+      "sign": "DAUGHTER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DAY.gif",
+      "sign": "DAY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DEAF.gif",
+      "sign": "DEAF",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DEAF2.gif",
+      "sign": "DEAF2",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DEAFAPPLAUSE.gif",
+      "sign": "DEAFAPPLAUSE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DECIDE.gif",
+      "sign": "DECIDE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DECORATE.gif",
+      "sign": "DECORATE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DEEP.gif",
+      "sign": "DEEP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DELETE.gif",
+      "sign": "DELETE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DELICIOUS.gif",
+      "sign": "DELICIOUS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DEMOCRAT.gif",
+      "sign": "DEMOCRAT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DEPART.gif",
+      "sign": "DEPART",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DEPRESS.gif",
+      "sign": "DEPRESS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DESTROY.gif",
+      "sign": "DESTROY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DEVELOP.gif",
+      "sign": "DEVELOP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DIALOG.gif",
+      "sign": "DIALOG",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DIE.gif",
+      "sign": "DIE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DIFFERENT.gif",
+      "sign": "DIFFERENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DINNER.gif",
+      "sign": "DINNER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DIRECT.gif",
+      "sign": "DIRECT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DISAPPOINT.gif",
+      "sign": "DISAPPOINT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DISCUSS.gif",
+      "sign": "DISCUSS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DISGUST.gif",
+      "sign": "DISGUST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DISH.gif",
+      "sign": "DISH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DISMISS.gif",
+      "sign": "DISMISS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DISTRIBUTE.gif",
+      "sign": "DISTRIBUTE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DO.gif",
+      "sign": "DO",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DOCTOR.gif",
+      "sign": "DOCTOR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DODO.gif",
+      "sign": "DODO",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DOG.gif",
+      "sign": "DOG",
+      "handshape": "",
+      "hands": 1.0,
+      "movement": "repeated",
+      "location": "torso"
+    },
+    {
+      "img_src": "/gifs/DOLLAR.gif",
+      "sign": "DOLLAR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DOOR.gif",
+      "sign": "DOOR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DORM.gif",
+      "sign": "DORM",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DOUBT.gif",
+      "sign": "DOUBT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DOWN.gif",
+      "sign": "DOWN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DRESS_CLOTHES.gif",
+      "sign": "DRESS/CLOTHES",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DRINK.gif",
+      "sign": "DRINK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DRIVE.gif",
+      "sign": "DRIVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DROP.gif",
+      "sign": "DROP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DRUGS.gif",
+      "sign": "DRUGS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DRUNK.gif",
+      "sign": "DRUNK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DRYCEREAL.gif",
+      "sign": "DRYCEREAL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DURING_WHILE.gif",
+      "sign": "DURING/WHILE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/DYE.gif",
+      "sign": "DYE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EACH.gif",
+      "sign": "EACH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EACHONE.gif",
+      "sign": "EACHONE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EASY.gif",
+      "sign": "EASY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EAT.gif",
+      "sign": "EAT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EATNIGHT.gif",
+      "sign": "EATNIGHT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ECONOMIC.gif",
+      "sign": "ECONOMIC",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EIGHT.gif",
+      "sign": "EIGHT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ELEMENTARY.gif",
+      "sign": "ELEMENTARY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EMBARRASS.gif",
+      "sign": "EMBARRASS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EMERGENCY.gif",
+      "sign": "EMERGENCY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EMOTION.gif",
+      "sign": "EMOTION",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EMPTY_EARLY.gif",
+      "sign": "EMPTY/EARLY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ENCOURAGE.gif",
+      "sign": "ENCOURAGE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/END.gif",
+      "sign": "END",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ENJOY.gif",
+      "sign": "ENJOY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ENOUGH.gif",
+      "sign": "ENOUGH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ENTER.gif",
+      "sign": "ENTER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ENVIRONMENT.gif",
+      "sign": "ENVIRONMENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EQUAL.gif",
+      "sign": "EQUAL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ESCAPE.gif",
+      "sign": "ESCAPE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EVALUATE.gif",
+      "sign": "EVALUATE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EVERYDAY.gif",
+      "sign": "EVERYDAY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EVERYMONTH_RENT.gif",
+      "sign": "EVERYMONTH/RENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EVERYYEAR.gif",
+      "sign": "EVERYYEAR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EXACT.gif",
+      "sign": "EXACT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EXCUSE.gif",
+      "sign": "EXCUSE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EXPAND.gif",
+      "sign": "EXPAND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EXPENSIVE.gif",
+      "sign": "EXPENSIVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EXPERIENCE.gif",
+      "sign": "EXPERIENCE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EXPERIMENT.gif",
+      "sign": "EXPERIMENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EXPERT.gif",
+      "sign": "EXPERT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EXPRESS.gif",
+      "sign": "EXPRESS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/EYES.gif",
+      "sign": "EYES",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FACE.gif",
+      "sign": "FACE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FACESAME.gif",
+      "sign": "FACESAME",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FAIL.gif",
+      "sign": "FAIL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FALLINLOVE.gif",
+      "sign": "FALLINLOVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FAMILY.gif",
+      "sign": "FAMILY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FAMOUS.gif",
+      "sign": "FAMOUS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FANCY.gif",
+      "sign": "FANCY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FARM.gif",
+      "sign": "FARM",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FAST.gif",
+      "sign": "FAST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FAST3.gif",
+      "sign": "FAST3",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FATHER.gif",
+      "sign": "FATHER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FAULT.gif",
+      "sign": "FAULT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FAVORITE_PREFER.gif",
+      "sign": "FAVORITE/PREFER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FEED.gif",
+      "sign": "FEED",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FEEDBACK3.gif",
+      "sign": "FEEDBACK3",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FEEL.gif",
+      "sign": "FEEL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FEW.gif",
+      "sign": "FEW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FEW_CLOSE.gif",
+      "sign": "FEW/CLOSE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FIFTEEN.gif",
+      "sign": "FIFTEEN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FIGHT.gif",
+      "sign": "FIGHT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FILLOUT.gif",
+      "sign": "FILL OUT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FINALLY.gif",
+      "sign": "FINALLY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FIND_FINDOUT.gif",
+      "sign": "FIND/FINDOUT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FIND_FINDOUTOUT.gif",
+      "sign": "FIND/FINDOUTOUT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FINE.gif",
+      "sign": "FINE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FINGERSPELL.gif",
+      "sign": "FINGERSPELL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FINISH.gif",
+      "sign": "FINISH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FIRE_BURN.gif",
+      "sign": "FIRE/BURN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FIRED.gif",
+      "sign": "FIRED",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FIREWORKS.gif",
+      "sign": "FIREWORKS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FIRST.gif",
+      "sign": "FIRST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FIRSTINLIST.gif",
+      "sign": "FIRSTINLIST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FISH.gif",
+      "sign": "FISH",
+      "handshape": "",
+      "hands": 2.0,
+      "movement": "repeated",
+      "location": "in space "
+    },
+    {
+      "img_src": "/gifs/FISHING.gif",
+      "sign": "FISHING",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FIVE.gif",
+      "sign": "FIVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FLAT_FLOOR.gif",
+      "sign": "FLAT/FLOOR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FLAT_LEVEL.gif",
+      "sign": "FLAT/LEVEL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FLATTIRE.gif",
+      "sign": "FLAT TIRE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FLIPFLOP.gif",
+      "sign": "FLIP FLOP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FLOW.gif",
+      "sign": "FLOW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FLOWER.gif",
+      "sign": "FLOWER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FLYBYPLANE.gif",
+      "sign": "FLY BY PLANE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FOCUS_NARROW.gif",
+      "sign": "FOCUS/NARROW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FOLLOW.gif",
+      "sign": "FOLLOW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FOOTBALL.gif",
+      "sign": "FOOTBALL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FOR.gif",
+      "sign": "FOR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FORFOR.gif",
+      "sign": "FORFOR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FORGET.gif",
+      "sign": "FORGET",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FORGETIT.gif",
+      "sign": "FORGET IT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FORK.gif",
+      "sign": "FORK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FORMERLY.gif",
+      "sign": "FORMERLY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FOURDOLLARS.gif",
+      "sign": "FOUR DOLLARS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FREE.gif",
+      "sign": "FREE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FRESHMAN.gif",
+      "sign": "FRESHMAN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FRIDAY.gif",
+      "sign": "FRIDAY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FRIEND.gif",
+      "sign": "FRIEND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FRISBEE.gif",
+      "sign": "FRISBEE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FROM.gif",
+      "sign": "FROM",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FROMNOWON.gif",
+      "sign": "FROM NOW ON",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FULL.gif",
+      "sign": "FULL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FUN.gif",
+      "sign": "FUN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FUNNY.gif",
+      "sign": "FUNNY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/FUTURE.gif",
+      "sign": "FUTURE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GAME.gif",
+      "sign": "GAME",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GARAGE_SUBMARINE.gif",
+      "sign": "GARAGE/SUBMARINE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GATE.gif",
+      "sign": "GATE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GENERAL.gif",
+      "sign": "GENERAL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GENERATIONSAGO.gif",
+      "sign": "GENERATIONS AGO",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GET.gif",
+      "sign": "GET",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GETIN.gif",
+      "sign": "GET IN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GETTICKET.gif",
+      "sign": "GET TICKET",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GETUP.gif",
+      "sign": "GET UP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GHOST.gif",
+      "sign": "GHOST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GIFT.gif",
+      "sign": "GIFT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GIRL.gif",
+      "sign": "GIRL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GIVE.gif",
+      "sign": "GIVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GLASSES2.gif",
+      "sign": "GLASSES2",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GO.gif",
+      "sign": "GO",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GOAL.gif",
+      "sign": "GOAL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GOLF.gif",
+      "sign": "GOLF",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GONE.gif",
+      "sign": "GONE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GOOD_THANKYOU.gif",
+      "sign": "GOOD/THANKYOU",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GOOUT.gif",
+      "sign": "GO OUT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GRAB.gif",
+      "sign": "GRAB",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GRABCHANCE.gif",
+      "sign": "GRAB CHANCE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GRAD.gif",
+      "sign": "GRAD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GRADUALIMPROVE.gif",
+      "sign": "GRADUAL IMPROVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GRADUATE.gif",
+      "sign": "GRADUATE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GRANDMOTHER.gif",
+      "sign": "GRAND MOTHER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GRASS.gif",
+      "sign": "GRASS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GREAT.gif",
+      "sign": "GREAT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GRIEF.gif",
+      "sign": "GRIEF",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GROUP.gif",
+      "sign": "GROUP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GROUP_TOGETHER.gif",
+      "sign": "GROUP/TOGETHER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GROW.gif",
+      "sign": "GROW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GROWUP.gif",
+      "sign": "GROWUP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GUARANTEE.gif",
+      "sign": "GUARANTEE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GUILTY.gif",
+      "sign": "GUILTY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GUITAR.gif",
+      "sign": "GUITAR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/GYM.gif",
+      "sign": "GYM",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HABIT.gif",
+      "sign": "HABIT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HAIR.gif",
+      "sign": "HAIR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HALL.gif",
+      "sign": "HALL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HAMBURGER.gif",
+      "sign": "HAMBURGER",
+      "handshape": "",
+      "hands": 2.0,
+      "movement": "repeated",
+      "location": "in space"
+    },
+    {
+      "img_src": "/gifs/HANGUPPHONE.gif",
+      "sign": "HANG UP PHONE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HAPPEN.gif",
+      "sign": "HAPPEN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HAPPY.gif",
+      "sign": "HAPPY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HARD.gif",
+      "sign": "HARD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HATE.gif",
+      "sign": "HATE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HAVE.gif",
+      "sign": "HAVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HEADBAND.gif",
+      "sign": "HEADBAND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HEAR.gif",
+      "sign": "HEAR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HEAR_LISTEN.gif",
+      "sign": "HEAR/LISTEN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HEARING.gif",
+      "sign": "HEARING",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HEARNOISE.gif",
+      "sign": "HEAR NOISE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HEARRUMBLE.gif",
+      "sign": "HEAR RUMBLE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HEAVY.gif",
+      "sign": "HEAVY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HEIGHT2.gif",
+      "sign": "HEIGHT2",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HELP.gif",
+      "sign": "HELP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HERE.gif",
+      "sign": "HERE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HIGH.gif",
+      "sign": "HIGH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HISTORY.gif",
+      "sign": "HISTORY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HIT.gif",
+      "sign": "HIT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HOME.gif",
+      "sign": "HOME",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HOMEWORK.gif",
+      "sign": "HOMEWORK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HONEST.gif",
+      "sign": "HONEST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HONOR.gif",
+      "sign": "HONOR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HOPE.gif",
+      "sign": "HOPE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HORSE.gif",
+      "sign": "HORSE",
+      "handshape": "",
+      "hands": 2.0,
+      "movement": "repeated",
+      "location": "side of head"
+    },
+    {
+      "img_src": "/gifs/HOSPITAL.gif",
+      "sign": "HOSPITAL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HOT.gif",
+      "sign": "HOT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HOUSE.gif",
+      "sign": "HOUSE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HOW.gif",
+      "sign": "HOW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HOWMANY.gif",
+      "sign": "HOW MANY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HUNGRY_WISH.gif",
+      "sign": "HUNGRY/WISH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HURRICANE.gif",
+      "sign": "HURRICANE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HURRY.gif",
+      "sign": "HURRY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/HUSBAND.gif",
+      "sign": "HUSBAND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ICECREAM.gif",
+      "sign": "ICE CREAM",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/IDEA.gif",
+      "sign": "IDEA",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/IDENTIFY.gif",
+      "sign": "IDENTIFY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/IF.gif",
+      "sign": "IF",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/IGNITIONON.gif",
+      "sign": "IGNITION ON",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ILLEGAL.gif",
+      "sign": "ILLEGAL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/IMAGINE.gif",
+      "sign": "IMAGINE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/IMPORTANT.gif",
+      "sign": "IMPORTANT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/IMPOSSIBLE.gif",
+      "sign": "IMPOSSIBLE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/IN.gif",
+      "sign": "IN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INCLUDE_INVOLVE.gif",
+      "sign": "INCLUDE/INVOLVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INCREASE.gif",
+      "sign": "INCREASE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INDIVIDUAL.gif",
+      "sign": "INDIVIDUAL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INFORM.gif",
+      "sign": "INFORM",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INHALE.gif",
+      "sign": "INHALE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INNOCENT.gif",
+      "sign": "INNOCENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INSPIRE.gif",
+      "sign": "INSPIRE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INSTITUTE.gif",
+      "sign": "INSTITUTE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INSURANCE_INFECTION.gif",
+      "sign": "INSURANCE/INFECTION",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INTERESTING.gif",
+      "sign": "INTERESTING",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INTERNATIONAL.gif",
+      "sign": "INTERNATIONAL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INTERNET.gif",
+      "sign": "INTERNET",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INTERPRET.gif",
+      "sign": "INTERPRET",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INTERPRETAGENT.gif",
+      "sign": "INTERPRET AGENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INTERRUPT.gif",
+      "sign": "INTERRUPT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INTERVIEW.gif",
+      "sign": "INTERVIEW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INTRODUCE.gif",
+      "sign": "INTRODUCE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/INVITE_HIRE.gif",
+      "sign": "INVITE/HIRE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/JOB.gif",
+      "sign": "JOB",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/JOIN.gif",
+      "sign": "JOIN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/JUNIOR3.gif",
+      "sign": "JUNIOR3",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/KEEP.gif",
+      "sign": "KEEP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/KEY.gif",
+      "sign": "KEY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/KICKOFF.gif",
+      "sign": "KICKOFF",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/KID.gif",
+      "sign": "KID",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/KIND.gif",
+      "sign": "KIND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/KING.gif",
+      "sign": "KING",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/KISSFIST.gif",
+      "sign": "KISS FIST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/KITCHEN.gif",
+      "sign": "KITCHEN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/KNOW.gif",
+      "sign": "KNOW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/KNOWNEG.gif",
+      "sign": "KNOWNEG",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/KNOWNOTHING.gif",
+      "sign": "KNOW NOTHING",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/KNOWTHAT.gif",
+      "sign": "KNOW THAT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LANGUAGE.gif",
+      "sign": "LANGUAGE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LAPTOP.gif",
+      "sign": "LAPTOP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LAST.gif",
+      "sign": "LAST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LASTWEEK.gif",
+      "sign": "LAST WEEK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LASTYEAR.gif",
+      "sign": "LAST YEAR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LATE.gif",
+      "sign": "LATE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LATER2.gif",
+      "sign": "LATER2",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LAUGH.gif",
+      "sign": "LAUGH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LAZY.gif",
+      "sign": "LAZY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LEARN.gif",
+      "sign": "LEARN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LEAVE.gif",
+      "sign": "LEAVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LEAVETHERE.gif",
+      "sign": "LEAVETHERE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LECTURE.gif",
+      "sign": "LECTURE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LEMON.gif",
+      "sign": "LEMON",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LESS.gif",
+      "sign": "LESS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LESSTHAN.gif",
+      "sign": "LESSTHAN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LETTER_MAIL.gif",
+      "sign": "LETTER/MAIL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LIBRARY.gif",
+      "sign": "LIBRARY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LICENSE.gif",
+      "sign": "LICENSE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LIE.gif",
+      "sign": "LIE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LIEDOWN.gif",
+      "sign": "LIEDOWN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LIGHT.gif",
+      "sign": "LIGHT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LIGHTFLASH.gif",
+      "sign": "LIGHTFLASH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LIGHTMATCH.gif",
+      "sign": "LIGHTMATCH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LIKE.gif",
+      "sign": "LIKE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LINE.gif",
+      "sign": "LINE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LINGUISTICS.gif",
+      "sign": "LINGUISTICS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LIST.gif",
+      "sign": "LIST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LISTORDER.gif",
+      "sign": "LISTORDER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LITTLEBIT.gif",
+      "sign": "LITTLEBIT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LIVE.gif",
+      "sign": "LIVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LOCAL.gif",
+      "sign": "LOCAL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LOCK.gif",
+      "sign": "LOCK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LONG.gif",
+      "sign": "LONG",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LONGAGO.gif",
+      "sign": "LONG A GO",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LONGLIST.gif",
+      "sign": "LONG LIST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LOOK.gif",
+      "sign": "LOOK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LOOKBYEYE.gif",
+      "sign": "LOOK BY EYE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LOSE.gif",
+      "sign": "LOSE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LOSECOMPETITION.gif",
+      "sign": "LOSE COMPETITION",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LOTION.gif",
+      "sign": "LOTION",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LOUD.gif",
+      "sign": "LOUD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LOUSY.gif",
+      "sign": "LOUSY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LOVE.gif",
+      "sign": "LOVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LOWERCASE_TINY.gif",
+      "sign": "LOWERCASE/TINY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/LUCKY.gif",
+      "sign": "LUCKY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MACHINE.gif",
+      "sign": "MACHINE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MAD.gif",
+      "sign": "MAD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MAGAZINE.gif",
+      "sign": "MAGAZINE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MAJOR.gif",
+      "sign": "MAJOR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MAKE.gif",
+      "sign": "MAKE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MALECOUSIN.gif",
+      "sign": "MALECOUSIN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MAN.gif",
+      "sign": "MAN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MAN2.gif",
+      "sign": "MAN2",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MANAGE_CONTROL.gif",
+      "sign": "MANAGE/CONTROL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MANAGE_CONTROLAGENT.gif",
+      "sign": "MANAGE/CONTROL AGENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MANY.gif",
+      "sign": "MANY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MARRY.gif",
+      "sign": "MARRY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MATCH.gif",
+      "sign": "MATCH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MATH.gif",
+      "sign": "MATH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MAYBE.gif",
+      "sign": "MAYBE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MEAN.gif",
+      "sign": "MEAN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MEAT.gif",
+      "sign": "MEAT",
+      "handshape": "",
+      "hands": 2.0,
+      "movement": "uni",
+      "location": "in space"
+    },
+    {
+      "img_src": "/gifs/MEDICINE.gif",
+      "sign": "MEDICINE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MEET.gif",
+      "sign": "MEET",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MEETING.gif",
+      "sign": "MEETING",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MELON_PUMPKIN.gif",
+      "sign": "MELON/PUMPKIN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MELT_SOLVE.gif",
+      "sign": "MELT/SOLVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MEMBER.gif",
+      "sign": "MEMBER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MEMORIZE.gif",
+      "sign": "MEMORIZE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MESSEDUP.gif",
+      "sign": "MESSED UP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MICROPHONE.gif",
+      "sign": "MICROPHONE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MIDDLE.gif",
+      "sign": "MIDDLE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MIDNIGHT.gif",
+      "sign": "MIDNIGHT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MILK.gif",
+      "sign": "MILK",
+      "handshape": "",
+      "hands": 1.0,
+      "movement": "repeated",
+      "location": "in space"
+    },
+    {
+      "img_src": "/gifs/MIND.gif",
+      "sign": "MIND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MINOR.gif",
+      "sign": "MINOR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MINUTE.gif",
+      "sign": "MINUTE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MISMATCH.gif",
+      "sign": "MISMATCH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MISS_ASSUME.gif",
+      "sign": "MISS/ASSUME",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MISTAKE.gif",
+      "sign": "MISTAKE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MISUNDERSTAND.gif",
+      "sign": "MISUNDERSTAND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MONDAY.gif",
+      "sign": "MONDAY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MONEY.gif",
+      "sign": "MONEY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MONEY2.gif",
+      "sign": "MONEY2",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MORE.gif",
+      "sign": "MORE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MORETHAN.gif",
+      "sign": "MORETHAN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MORNING.gif",
+      "sign": "MORNING",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MOST.gif",
+      "sign": "MOST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MOTHER.gif",
+      "sign": "MOTHER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MOTHERFATHER.gif",
+      "sign": "MOTHERFATHER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MOTIVATE.gif",
+      "sign": "MOTIVATE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MOUSE_FICTION.gif",
+      "sign": "MOUSE/FICTION",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MOVE.gif",
+      "sign": "MOVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MOVEAROUND.gif",
+      "sign": "MOVEAROUND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MOVEAWAY.gif",
+      "sign": "MOVEAWAY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MOVIE.gif",
+      "sign": "MOVIE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MOW.gif",
+      "sign": "MOW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MUSIC.gif",
+      "sign": "MUSIC",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MUST.gif",
+      "sign": "MUST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/MYSTERY.gif",
+      "sign": "MYSTERY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NAB.gif",
+      "sign": "NAB",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NAME.gif",
+      "sign": "NAME",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NARROWSTREET.gif",
+      "sign": "NARROWSTREET",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NEAR.gif",
+      "sign": "NEAR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NEAT.gif",
+      "sign": "NEAT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NEGATIVE.gif",
+      "sign": "NEGATIVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NEPHEW.gif",
+      "sign": "NEPHEW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NEVER.gif",
+      "sign": "NEVER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NEW.gif",
+      "sign": "NEW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NEXT.gif",
+      "sign": "NEXT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NEXTTO.gif",
+      "sign": "NEXTTO",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NEXTWEEK.gif",
+      "sign": "NEXTWEEK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NICE_CLEAN.gif",
+      "sign": "NICE/CLEAN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NIGHT.gif",
+      "sign": "NIGHT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NINE.gif",
+      "sign": "NINE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NINETEEN.gif",
+      "sign": "NINETEEN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NO.gif",
+      "sign": "NO",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NOISE.gif",
+      "sign": "NOISE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NOISERUMBLE.gif",
+      "sign": "NOISE RUMBLE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NONE.gif",
+      "sign": "NONE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NONE_NOTHING.gif",
+      "sign": "NONE/NOTHING",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NORTH.gif",
+      "sign": "NORTH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NOSE.gif",
+      "sign": "NOSE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NOT.gif",
+      "sign": "NOT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NOTCARE.gif",
+      "sign": "NOT CARE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NOTHING.gif",
+      "sign": "NOTHING",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NOTHINGATALL.gif",
+      "sign": "NOTHING AT ALL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NOTICE.gif",
+      "sign": "NOTICE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NOTMIND.gif",
+      "sign": "NOT MIND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NOTYET.gif",
+      "sign": "NOT YET",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NOW.gif",
+      "sign": "NOW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NUMBER.gif",
+      "sign": "NUMBER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NURSE.gif",
+      "sign": "NURSE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/NUT.gif",
+      "sign": "NUT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/OCEAN.gif",
+      "sign": "OCEAN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/OFCOURSE.gif",
+      "sign": "OF COURSE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/OFF.gif",
+      "sign": "OFF",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/OFFICE.gif",
+      "sign": "OFFICE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/OFTEN.gif",
+      "sign": "OFTEN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/OHISEE.gif",
+      "sign": "OH I SEE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/OK.gif",
+      "sign": "OK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/OLD.gif",
+      "sign": "OLD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ON.gif",
+      "sign": "ON",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ONE.gif",
+      "sign": "ONE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ONEHUNDRED.gif",
+      "sign": "ONE HUNDRED",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ONEMONTH.gif",
+      "sign": "ONE MONTH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ONEMORE.gif",
+      "sign": "ONE MORE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ONEWEEK.gif",
+      "sign": "ONE WEEK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ONLY.gif",
+      "sign": "ONLY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ONTIME.gif",
+      "sign": "ON TIME",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/OPEN.gif",
+      "sign": "OPEN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/OPPORTUNITY.gif",
+      "sign": "OPPORTUNITY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/OPPOSITE.gif",
+      "sign": "OPPOSITE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/OPTION.gif",
+      "sign": "OPTION",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/OR.gif",
+      "sign": "OR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ORANGE.gif",
+      "sign": "ORANGE",
+      "handshape": "",
+      "hands": 1.0,
+      "movement": "repeated",
+      "location": "at mouth"
+    },
+    {
+      "img_src": "/gifs/ORDER.gif",
+      "sign": "ORDER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ORGANIZATION.gif",
+      "sign": "ORGANIZATION",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ORGANIZE.gif",
+      "sign": "ORGANIZE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/OTHER.gif",
+      "sign": "OTHER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/OUT.gif",
+      "sign": "OUT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/OVER_AFTER.gif",
+      "sign": "OVER/AFTER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PACK.gif",
+      "sign": "PACK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PADDLE_CANOE.gif",
+      "sign": "PADDLE/CANOE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PAINT.gif",
+      "sign": "PAINT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PANTS2.gif",
+      "sign": "PANTS2",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PAPER.gif",
+      "sign": "PAPER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PAPERCHECK_CARD.gif",
+      "sign": "PAPER CHECK/CARD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PARALLEL.gif",
+      "sign": "PARALLEL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PARK.gif",
+      "sign": "PARK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PARTY.gif",
+      "sign": "PARTY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PASS.gif",
+      "sign": "PASS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PASSOUT.gif",
+      "sign": "PASSOUT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PAST.gif",
+      "sign": "PAST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PASTNIGHT.gif",
+      "sign": "PAST NIGHT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PAY.gif",
+      "sign": "PAY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PAY_BUY.gif",
+      "sign": "PAY/BUY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PAY_SPEND.gif",
+      "sign": "PAY/SPEND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PEOPLE.gif",
+      "sign": "PEOPLE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PERMIT.gif",
+      "sign": "PERMIT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PERSON.gif",
+      "sign": "PERSON",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PERSONALITY.gif",
+      "sign": "PERSONALITY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PET_SPOILED.gif",
+      "sign": "PET/SPOILED",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PHONE.gif",
+      "sign": "PHONE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PHYSICS.gif",
+      "sign": "PHYSICS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PICK_CHOOSE.gif",
+      "sign": "PICK/CHOOSE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PICTURE.gif",
+      "sign": "PICTURE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PIE.gif",
+      "sign": "PIE",
+      "handshape": "",
+      "hands": 2.0,
+      "movement": "repeated",
+      "location": "in space"
+    },
+    {
+      "img_src": "/gifs/PIG.gif",
+      "sign": "PIG",
+      "handshape": "",
+      "hands": 1.0,
+      "movement": "repeated",
+      "location": "under chin"
+    },
+    {
+      "img_src": "/gifs/PINEAPPLE.gif",
+      "sign": "PINEAPPLE",
+      "handshape": "",
+      "hands": 1.0,
+      "movement": "repeated",
+      "location": "at eye"
+    },
+    {
+      "img_src": "/gifs/PINGPONG_TENNIS.gif",
+      "sign": "PINGPONG/TENNIS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PISSOFF.gif",
+      "sign": "PISS OFF",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PIZZA4.gif",
+      "sign": "PIZZA4",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PLACE.gif",
+      "sign": "PLACE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PLAID.gif",
+      "sign": "PLAID",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PLAN.gif",
+      "sign": "PLAN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PLAY.gif",
+      "sign": "PLAY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PLUS.gif",
+      "sign": "PLUS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PO.gif",
+      "sign": "PO",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/POINT.gif",
+      "sign": "POINT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/POINTTO.gif",
+      "sign": "POINTTO",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/POLITE.gif",
+      "sign": "POLITE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/POLITICS.gif",
+      "sign": "POLITICS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PONDER.gif",
+      "sign": "PONDER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/POPCORN.gif",
+      "sign": "POPCORN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/POPUP.gif",
+      "sign": "POPUP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/POSS.gif",
+      "sign": "POSS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/POSTER.gif",
+      "sign": "POSTER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/POSTPONE.gif",
+      "sign": "POSTPONE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/POUND_WEIGH.gif",
+      "sign": "POUND/WEIGH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/POWER.gif",
+      "sign": "POWER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/POWERFUL.gif",
+      "sign": "POWERFUL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PRACTICE.gif",
+      "sign": "PRACTICE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PRESIDENT.gif",
+      "sign": "PRESIDENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PREVENT.gif",
+      "sign": "PREVENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PRICE.gif",
+      "sign": "PRICE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PRINCE.gif",
+      "sign": "PRINCE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PRINCIPAL.gif",
+      "sign": "PRINCIPAL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PROBLEM.gif",
+      "sign": "PROBLEM",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PROCEED.gif",
+      "sign": "PROCEED",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PROCEED2.gif",
+      "sign": "PROCEED2",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PROFESSION.gif",
+      "sign": "PROFESSION",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PROGRESS.gif",
+      "sign": "PROGRESS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PROJECT.gif",
+      "sign": "PROJECT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PROPORTION.gif",
+      "sign": "PROPORTION",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PROVE.gif",
+      "sign": "PROVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PULL.gif",
+      "sign": "PULL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PUNCH.gif",
+      "sign": "PUNCH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PUNISH.gif",
+      "sign": "PUNISH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PURPLE.gif",
+      "sign": "PURPLE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PUT.gif",
+      "sign": "PUT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/PUTAWAY.gif",
+      "sign": "PUT AWAY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/QUESTION.gif",
+      "sign": "QUESTION",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/QUIET.gif",
+      "sign": "QUIET",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/QUIT.gif",
+      "sign": "QUIT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/QUIZ.gif",
+      "sign": "QUIZ",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/QUOTE_TOPIC.gif",
+      "sign": "QUOTE/TOPIC",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/RAIN.gif",
+      "sign": "RAIN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/RAKE.gif",
+      "sign": "RAKE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/RANGE.gif",
+      "sign": "RANGE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/READ.gif",
+      "sign": "READ",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/READY.gif",
+      "sign": "READY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REALLY.gif",
+      "sign": "REALLY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REALLYWORK.gif",
+      "sign": "REALLY WORK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REALLYWORK_BUSINESS.gif",
+      "sign": "REALLY WORK/BUSINESS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REASON.gif",
+      "sign": "REASON",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/RECENTPAST.gif",
+      "sign": "RECENT PAST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/RECORD.gif",
+      "sign": "RECORD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/RED.gif",
+      "sign": "RED",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REFER.gif",
+      "sign": "REFER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REFLECT.gif",
+      "sign": "REFLECT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REFUSE.gif",
+      "sign": "REFUSE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REGULAR.gif",
+      "sign": "REGULAR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/RELATIONSHIP.gif",
+      "sign": "RELATIONSHIP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/RELATIONSHIPOFF.gif",
+      "sign": "RELATIONSHIP OFF",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REMEMBER.gif",
+      "sign": "REMEMBER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REMIND.gif",
+      "sign": "REMIND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REMIND2P.gif",
+      "sign": "REMIND2P",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REPAIR.gif",
+      "sign": "REPAIR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REPLACE.gif",
+      "sign": "REPLACE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REPORT.gif",
+      "sign": "REPORT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REPUBLICAN.gif",
+      "sign": "REPUBLICAN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REQUEST.gif",
+      "sign": "REQUEST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REQUIRE.gif",
+      "sign": "REQUIRE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/RESEARCH.gif",
+      "sign": "RESEARCH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/RESPONSIBILITY.gif",
+      "sign": "RESPONSIBILITY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/REST.gif",
+      "sign": "REST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/RESTAURANT.gif",
+      "sign": "RESTAURANT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/RETIRE.gif",
+      "sign": "RETIRE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ROAD.gif",
+      "sign": "ROAD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ROOMMATE.gif",
+      "sign": "ROOMMATE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/ROWING.gif",
+      "sign": "ROWING",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/RUIN.gif",
+      "sign": "RUIN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/RULE.gif",
+      "sign": "RULE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/RUN.gif",
+      "sign": "RUN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/RUNMACHINE.gif",
+      "sign": "RUN MACHINE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/RUNOUT.gif",
+      "sign": "RUN OUT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SAD.gif",
+      "sign": "SAD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SAFE.gif",
+      "sign": "SAFE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SALE.gif",
+      "sign": "SALE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SAME.gif",
+      "sign": "SAME",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SAMEOLD.gif",
+      "sign": "SAME OLD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SAMETIME.gif",
+      "sign": "SAME TIME",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SANDWICH4.gif",
+      "sign": "SANDWICH4",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SATISFIED.gif",
+      "sign": "SATISFIED",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SAVE.gif",
+      "sign": "SAVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SAVEMONEY.gif",
+      "sign": "SAVE MONEY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SAY.gif",
+      "sign": "SAY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SCHEDULE.gif",
+      "sign": "SCHEDULE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SCHOOL.gif",
+      "sign": "SCHOOL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SCRAPE.gif",
+      "sign": "SCRAPE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SCRATCH.gif",
+      "sign": "SCRATCH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SCREAM.gif",
+      "sign": "SCREAM",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SCREEN_FILTER.gif",
+      "sign": "SCREEN/FILTER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SEARCHFOR.gif",
+      "sign": "SEARCH FOR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SECOND.gif",
+      "sign": "SECOND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SECONDINLIST.gif",
+      "sign": "SECONDIN LIST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SEE.gif",
+      "sign": "SEE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SEEM.gif",
+      "sign": "SEEM",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SEESEE.gif",
+      "sign": "SEE SEE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SELF.gif",
+      "sign": "SELF",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SELL.gif",
+      "sign": "SELL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SEMESTER.gif",
+      "sign": "SEMESTER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SEND.gif",
+      "sign": "SEND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SEND_MAIL.gif",
+      "sign": "SEND/MAIL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SENIOR.gif",
+      "sign": "SENIOR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SENTENCE.gif",
+      "sign": "SENTENCE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SEPARATE.gif",
+      "sign": "SEPARATE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SERIOUS.gif",
+      "sign": "SERIOUS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SERVICE.gif",
+      "sign": "SERVICE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SETUP.gif",
+      "sign": "SET UP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SEVEN.gif",
+      "sign": "SEVEN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SEVENTH.gif",
+      "sign": "SEVENTH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SHEETCAKE.gif",
+      "sign": "SHEET CAKE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SHINE2.gif",
+      "sign": "SHINE2",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SHOE.gif",
+      "sign": "SHOE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SHORTHEIGHT.gif",
+      "sign": "SHORT HEIGHT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SHORTS.gif",
+      "sign": "SHORTS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SHOULD.gif",
+      "sign": "SHOULD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SHOW.gif",
+      "sign": "SHOW",
+      "handshape": "",
+      "hands": 2.0,
+      "movement": "test",
+      "location": "test"
+    },
+    {
+      "img_src": "/gifs/SHUT.gif",
+      "sign": "SHUT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SICK.gif",
+      "sign": "SICK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SICK_SILLY.gif",
+      "sign": "SICK/SILLY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SIGN.gif",
+      "sign": "SIGN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SILLY.gif",
+      "sign": "SILLY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SISTER.gif",
+      "sign": "SISTER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SIT.gif",
+      "sign": "SIT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SITUATION.gif",
+      "sign": "SITUATION",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SIX.gif",
+      "sign": "SIX",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SKI.gif",
+      "sign": "SKI",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SKILL.gif",
+      "sign": "SKILL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SLEEP.gif",
+      "sign": "SLEEP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SLOW.gif",
+      "sign": "SLOW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SMALL.gif",
+      "sign": "SMALL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SMILE.gif",
+      "sign": "SMILE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SMOOTH.gif",
+      "sign": "SMOOTH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SNOB.gif",
+      "sign": "SNOB",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SNOW.gif",
+      "sign": "SNOW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SO.gif",
+      "sign": "SO",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SOCIAL_INTERACT.gif",
+      "sign": "SOCIAL/INTERACT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SOCIALWORK.gif",
+      "sign": "SOCIALWORK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SOME.gif",
+      "sign": "SOME",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SOMETHING_ONE.gif",
+      "sign": "SOMETHING/ONE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SOMETIMES.gif",
+      "sign": "SOMETIMES",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SON.gif",
+      "sign": "SON",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SOON.gif",
+      "sign": "SOON",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SORRY.gif",
+      "sign": "SORRY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SOSO.gif",
+      "sign": "SO SO",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SOUP.gif",
+      "sign": "SOUP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SOUTH.gif",
+      "sign": "SOUTH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SPAGHETTI.gif",
+      "sign": "SPAGHETTI",
+      "handshape": "",
+      "hands": 2.0,
+      "movement": "repeated",
+      "location": "in space"
+    },
+    {
+      "img_src": "/gifs/SPECIAL_EXCEPT.gif",
+      "sign": "SPECIAL/EXCEPT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SPECIALTY.gif",
+      "sign": "SPECIALTY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SPEECH_ORAL.gif",
+      "sign": "SPEECH/ORAL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SPELL.gif",
+      "sign": "SPELL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SPEND.gif",
+      "sign": "SPEND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SPREAD.gif",
+      "sign": "SPREAD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STAMP.gif",
+      "sign": "STAMP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STAND.gif",
+      "sign": "STAND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STAR.gif",
+      "sign": "STAR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/START.gif",
+      "sign": "START",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STAY.gif",
+      "sign": "STAY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STEAL.gif",
+      "sign": "STEAL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STICKY.gif",
+      "sign": "STICKY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STILL.gif",
+      "sign": "STILL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STOP.gif",
+      "sign": "STOP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STORY.gif",
+      "sign": "STORY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STRAIGHT.gif",
+      "sign": "STRAIGHT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STRANGE.gif",
+      "sign": "STRANGE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STRING.gif",
+      "sign": "STRING",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STRIPES.gif",
+      "sign": "STRIPES",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STRONG.gif",
+      "sign": "STRONG",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STRUGGLE.gif",
+      "sign": "STRUGGLE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STUCK.gif",
+      "sign": "STUCK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STUDENT.gif",
+      "sign": "STUDENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/STUDY.gif",
+      "sign": "STUDY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SUCCEED.gif",
+      "sign": "SUCCEED",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SUFFER.gif",
+      "sign": "SUFFER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SUGGEST.gif",
+      "sign": "SUGGEST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SUMMER.gif",
+      "sign": "SUMMER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SUMMON.gif",
+      "sign": "SUMMON",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SUN.gif",
+      "sign": "SUN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SUNBATHE.gif",
+      "sign": "SUNBATHE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SUNDAY.gif",
+      "sign": "SUNDAY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SUNSHINE.gif",
+      "sign": "SUNSHINE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SUPERIOR.gif",
+      "sign": "SUPERIOR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SUPPORT.gif",
+      "sign": "SUPPORT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SURFACE.gif",
+      "sign": "SURFACE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SURFINTERNET.gif",
+      "sign": "SURF INTERNET",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SURPRISE.gif",
+      "sign": "SURPRISE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SUSPECT.gif",
+      "sign": "SUSPECT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SWALLOW.gif",
+      "sign": "SWALLOW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SWEETHEART.gif",
+      "sign": "SWEETHEART",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SWIM.gif",
+      "sign": "SWIM",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SWITCH.gif",
+      "sign": "SWITCH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/SYSTEM.gif",
+      "sign": "SYSTEM",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TABLE.gif",
+      "sign": "TABLE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TAKE.gif",
+      "sign": "TAKE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TAKEBREAK.gif",
+      "sign": "TAKE BREAK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TAKENOTES.gif",
+      "sign": "TAKE NOTES",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TAKEUP.gif",
+      "sign": "TAKE UP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TALK.gif",
+      "sign": "TALK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TALKOVER.gif",
+      "sign": "TALK OVER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TAN.gif",
+      "sign": "TAN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TAPERECORDING.gif",
+      "sign": "TAPE RECORDING",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TASTE.gif",
+      "sign": "TASTE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TEACH.gif",
+      "sign": "TEACH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TEACHAGENT.gif",
+      "sign": "TEACH AGENT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TEAM.gif",
+      "sign": "TEAM",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TEASE2.gif",
+      "sign": "TEASE2",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TELL.gif",
+      "sign": "TELL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TEMPERATURE.gif",
+      "sign": "TEMPERATURE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TEN.gif",
+      "sign": "TEN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TEND.gif",
+      "sign": "TEND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TEST.gif",
+      "sign": "TEST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TEXTING.gif",
+      "sign": "TEXTING",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THAN.gif",
+      "sign": "THAN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THAT.gif",
+      "sign": "THAT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THEN.gif",
+      "sign": "THEN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THEREFORE.gif",
+      "sign": "THEREFORE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THESE.gif",
+      "sign": "THESE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THING.gif",
+      "sign": "THING",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THINK.gif",
+      "sign": "THINK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THINKMEAN.gif",
+      "sign": "THINKMEAN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THINKOVER.gif",
+      "sign": "THINKOVER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THINKSHOCK.gif",
+      "sign": "THINKSHOCK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THIRD.gif",
+      "sign": "THIRD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THIRDINLIST.gif",
+      "sign": "THIRD IN LIST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THIRDPLACE.gif",
+      "sign": "THIRD PLACE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THIRTY.gif",
+      "sign": "THIRTY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THOUSAND.gif",
+      "sign": "THOUSAND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THREE.gif",
+      "sign": "THREE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THRILL_WHAT'SUP.gif",
+      "sign": "THRILL/WHAT'S UP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THROUGH.gif",
+      "sign": "THROUGH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THROW.gif",
+      "sign": "THROW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THUMBSUP_GOOD.gif",
+      "sign": "THUMBSUP/GOOD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/THURSDAY.gif",
+      "sign": "THURSDAY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TIME.gif",
+      "sign": "TIME",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TIMEPERIOD.gif",
+      "sign": "TIME PERIOD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TIRED.gif",
+      "sign": "TIRED",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TO_UNTIL.gif",
+      "sign": "TO/UNTIL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TOGETHER_GOSTEADY.gif",
+      "sign": "TOGETHER/GO STEADY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TOILET.gif",
+      "sign": "TOILET",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TOMORROW.gif",
+      "sign": "TOMORROW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TOOTH_GLASS.gif",
+      "sign": "TOOTH/GLASS",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TORTURE.gif",
+      "sign": "TORTURE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TOTAL.gif",
+      "sign": "TOTAL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TOUGH.gif",
+      "sign": "TOUGH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TRADITION.gif",
+      "sign": "TRADITION",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TRAFFIC2.gif",
+      "sign": "TRAFFIC2",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TRAIN.gif",
+      "sign": "TRAIN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TRANSFER.gif",
+      "sign": "TRANSFER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TREE.gif",
+      "sign": "TREE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TRIP.gif",
+      "sign": "TRIP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TROPHY.gif",
+      "sign": "TROPHY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TROUBLE.gif",
+      "sign": "TROUBLE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TRY.gif",
+      "sign": "TRY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TURN.gif",
+      "sign": "TURN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TV.gif",
+      "sign": "TV",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TWENTY.gif",
+      "sign": "TWENTY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TWENTYFIVE.gif",
+      "sign": "TWENTY FIVE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TWICE.gif",
+      "sign": "TWICE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TWO.gif",
+      "sign": "TWO",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/TYPE.gif",
+      "sign": "TYPE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/UGLY.gif",
+      "sign": "UGLY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/UMBRELLA.gif",
+      "sign": "UMBRELLA",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/UNCLE.gif",
+      "sign": "UNCLE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/UNDER.gif",
+      "sign": "UNDER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/UNDERSTAND.gif",
+      "sign": "UNDERSTAND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/UP.gif",
+      "sign": "UP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/UPAHEAD.gif",
+      "sign": "UPAHEAD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/UPSET.gif",
+      "sign": "UPSET",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/UPTONOW.gif",
+      "sign": "UPTONOW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/USE.gif",
+      "sign": "USE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/USESIGNLANGUAGE.gif",
+      "sign": "USE SIGN LANGUAGE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/VACATION.gif",
+      "sign": "VACATION",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/VARY.gif",
+      "sign": "VARY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/VEGETABLE.gif",
+      "sign": "VEGETABLE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/VERY.gif",
+      "sign": "VERY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/VERYFAST.gif",
+      "sign": "VERY FAST",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/VIDEOGAME.gif",
+      "sign": "VIDEOGAME",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/VIDEOTAPE.gif",
+      "sign": "VIDEO TAPE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/VISIT.gif",
+      "sign": "VISIT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/VISUALIZE.gif",
+      "sign": "VISUALIZE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/VOICE.gif",
+      "sign": "VOICE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/VOICERANGE.gif",
+      "sign": "VOICE RANGE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/VOLUNTEER_SHIRT.gif",
+      "sign": "VOLUNTEER/SHIRT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/VOMIT_HATE.gif",
+      "sign": "VOMIT/HATE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/VOTE.gif",
+      "sign": "VOTE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WAIT.gif",
+      "sign": "WAIT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WAITAMINUTE.gif",
+      "sign": "WAIT A MINUTE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WALK.gif",
+      "sign": "WALK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WANT.gif",
+      "sign": "WANT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WANTNEG.gif",
+      "sign": "WANTNEG",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WARM.gif",
+      "sign": "WARM",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WARN.gif",
+      "sign": "WARN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WASHINGMACHINE.gif",
+      "sign": "WASHING MACHINE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WATER.gif",
+      "sign": "WATER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WEATHER.gif",
+      "sign": "WEATHER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WEDDING.gif",
+      "sign": "WEDDING",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WEEKEND.gif",
+      "sign": "WEEKEND",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WHAT.gif",
+      "sign": "WHAT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WHEN.gif",
+      "sign": "WHEN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WHERE.gif",
+      "sign": "WHERE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WHICH.gif",
+      "sign": "WHICH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WHIP.gif",
+      "sign": "WHIP",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WHO.gif",
+      "sign": "WHO",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WHY.gif",
+      "sign": "WHY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WIDE.gif",
+      "sign": "WIDE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WIFE.gif",
+      "sign": "WIFE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WIN.gif",
+      "sign": "WIN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WINDOW.gif",
+      "sign": "WINDOW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WITH.gif",
+      "sign": "WITH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WOMAN.gif",
+      "sign": "WOMAN",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WONDER.gif",
+      "sign": "WONDER",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WOOD.gif",
+      "sign": "WOOD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WORD.gif",
+      "sign": "WORD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WORK.gif",
+      "sign": "WORK",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WORKOUT.gif",
+      "sign": "WORK OUT",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WORLD.gif",
+      "sign": "WORLD",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WORRY.gif",
+      "sign": "WORRY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WORSE.gif",
+      "sign": "WORSE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WORTH.gif",
+      "sign": "WORTH",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WOW.gif",
+      "sign": "WOW",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WOW_AWFUL.gif",
+      "sign": "WOW/AWFUL",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WRITE.gif",
+      "sign": "WRITE",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/WRONG.gif",
+      "sign": "WRONG",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/YEAR.gif",
+      "sign": "YEAR",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/YES.gif",
+      "sign": "YES",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/YESTERDAY.gif",
+      "sign": "YESTERDAY",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    },
+    {
+      "img_src": "/gifs/YOUNG.gif",
+      "sign": "YOUNG",
+      "handshape": "unknown",
+      "hands": "unknown",
+      "movement": "unknown",
+      "location": "unknown"
+    }
+  ]
+}
